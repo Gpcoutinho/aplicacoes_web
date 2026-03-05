@@ -1,1 +1,2 @@
-![alt text](image.png)
+![alt text](lighthouse.png)
+![alt text](w3.png)
