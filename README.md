@@ -1,2 +1,2 @@
-![alt text](lighthouse.png)
-![alt text](w3.png)
+![alt text](aula-01/lighthouse.png)
+![alt text](aula-01/w3.png)
