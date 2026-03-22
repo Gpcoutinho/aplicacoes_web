@@ -6,20 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Avaliação das 3 melhores hamburguerias de João Pessoa - PB, por Gabriel Paulo Coutinho.">
   <title>O Guia Definitivo do Burger em JP | Gabriel Coutinho</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <a href="#main-content" style="position: absolute; left: -10000px;">Pular para o conteúdo principal</a>
-
+    
     <header id="header">
         <h1>O Guia Definitivo do Burger em JP</h1>
-
+        
         <nav aria-label="Menu Principal">
             <ul>
                 <li><a href="#podio">O Pódio</a></li>
                 <li><a href="#criterios">Como avaliei</a></li>
                 <li><a href="#dica">Dica de Ouro</a></li>
             </ul>
+            <section id="midia">
+                <video controls poster="capa.jpg" width="640">
+                    <source src="arquivo.webm" type="video/webm">
+                    <source src="arquivo.mp4" type="video/mp4">
+                    <p>Este navegador não oferece suporte a vídeos em HTML5</p>
+                </video>
+            </section>
         </nav>
     </header>
 
@@ -64,6 +72,8 @@
             </article>
         </section>
 
+        <hr>
+
         <section id="criterios">
             <h2>Critérios de Avaliação</h2>
             <p>Para chegar a este ranking, utilizei os seguintes parâmetros:</p>
@@ -74,12 +84,49 @@
             </ul>
         </section>
 
-        <aside id="dica" aria-labelledby="dica-titulo">
+        <aside id="dica">
             <h4 id="dica-titulo">Dica de Pessoense</h4>
             <p><strong>Para o melhor sabor:</strong> Vá de Navarros.</p>
             <p><strong>Para rapidez e Smash:</strong> Peça o Curral.</p>
             <p><strong>Para uma experiência completa (Entrada + Sobremesa):</strong> Vá ao Gio Burguer.</p>
         </aside>
+
+        <hr>
+
+        <section id="formulario">
+            <h2>Envie sua Avaliação ou Sugestão</h2>
+            <p>Compartilhe sua opinião sobre as hamburguerias ou sugira uma nova</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="data">Data da Visita:</label>
+                <input type="date" id="data" name="data">
+
+                <label for="hamburgueria">Hamburgueria Avaliada:</label>
+                <select id="hamburgueria" name="hamburgueria">
+                    <option value="">Selecione</option>
+                    <option value="navarros">Navarros Burguer</option>
+                    <option value="curral">Curral Burguer</option>
+                    <option value="gio">Gio Burguer</option>
+                    <option value="outra">Outra</option>
+                </select>
+
+                <label for="avaliacao">Avaliação Geral (1-10):</label>
+                <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" value="5">
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Conte sua experiência..."></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </section>
     </main>
 
     <footer id="footer">
@@ -87,13 +134,3 @@
     </footer>
 </body>
 </html>
-
-
-<video controls poster="capa.jpg" width="640">
-    <source src="arquivo.webm" type="video/webm">
-    <source src="arquivo.mp4" type="video/mp4">
-    <p>Este navegador não oferce suporte a vídeos em HTML5</p>
-</video>
-
-Atividade da semana que vem pra entregar dia 24 e 25: inserir formulários avançados e mídia <br>
-Criar um segundo repositório  <br>
