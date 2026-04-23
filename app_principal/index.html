@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Avaliação das 3 melhores hamburguerias de João Pessoa - PB, por Gabriel Paulo Coutinho.">
-  <title>O Guia Definitivo do Burger em JP | Gabriel Coutinho</title>
+  <meta name="description" content="Avaliações de restaurantes e lanchonetes famosos de João Pessoa - PB. Compartilhe experiências culinárias e descubra os melhores lugares para comer.">
+  <title>Onde comer em João Pessoa - Avaliações de Restaurantes</title>
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -13,124 +13,267 @@
     <a href="#main-content" style="position: absolute; left: -10000px;">Pular para o conteúdo principal</a>
     
     <header id="header">
-        <h1>O Guia Definitivo do Burger em JP</h1>
+        <div class="header-content">
+            <h1>Onde comer em João Pessoa</h1>
+            <p><strong>Descubra os Melhores Sabores da Cidade</strong></p>
+        </div>
         
         <nav aria-label="Menu Principal">
-            <ul>
-                <li><a href="#podio">O Pódio</a></li>
-                <li><a href="#criterios">Como avaliei</a></li>
-                <li><a href="#dica">Dica de Ouro</a></li>
+            <ul class="nav-principal">
+                <li><a href="#intro">Opiniões</a></li>
+                <li><a href="#criterios">📋Critérios utilizados</a></li>
+                <li><a href="#formulario">✍️ Avaliar</a></li>
             </ul>
-            <section id="midia">
-                <video controls poster="capa.png" width="640">
-                    <source src="arquivo.webm" type="video/webm">
-                    <source src="arquivo.mp4" type="video/mp4">
-                    <p>Este navegador não oferece suporte a vídeos em HTML5</p>
-                </video>
-            </section>
         </nav>
+
+        <section id="midia" class="header-midia">
+            <video controls poster="capa.png" width="640">
+                <source src="arquivo.webm" type="video/webm">
+                <source src="arquivo.mp4" type="video/mp4">
+                <p>Este navegador não oferece suporte a vídeos em HTML5</p>
+            </video>
+        </section>
     </header>
 
     <main id="main-content">
-        <section id="podio">
-            <h2>As 3 Melhores Hamburguerias</h2>
-
-            <article>
-                <h3>1º Lugar: Navarros Burguer</h3>
-                <p><strong>Bairro:</strong> Jardim Luna</p>
-                <p>Pontos positivos:</p>
-                <ul>
-                    <li><strong>Montagem:</strong> Personalizada conforme o desejo do cliente.</li>
-                    <li><strong>Carne:</strong> No ponto certo, defumada por 10 horas.</li>
-                    <li><strong>Pão:</strong> Diversas opções de alta qualidade.</li>
-                    <li><strong>Acompanhamentos:</strong> Variedade de molhos e cebola crispy.</li>
-                </ul>
-                <p><em>Sugestão: Peça o duplo e a maionese trufada.</em></p>
-            </article>
-            
-            <article>
-                <h3>2º Lugar: Curral Burguer</h3>
-                <p><strong>Bairro:</strong> Apenas Delivery</p>
-                <p>Destaque pela agilidade e sabor marcante do Smash.</p>
-                <ul>
-                    <li><strong>Opções:</strong> Variedade com frango, salada e bacon.</li>
-                    <li><strong>Carne:</strong> Estilo Smash com crosta crocante.</li>
-                    <li><strong>Pão:</strong> Brioche de excelente qualidade.</li>
-                    <li><strong>Acompanhamentos:</strong> Picles artesanais (melhor da cidade).</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>3º Lugar: Gio Burguer</h3>
-                <p><strong>Bairro:</strong> Ipês / Estados</p>
-                <p>Reconhecida pela consistência e qualidade dos ingredientes.</p>
-                <ul>
-                    <li><strong>Variedade:</strong> Cardápio completo com sobremesas e entradas.</li>
-                    <li><strong>Carne:</strong> Alta e suculenta, feita no ponto do cliente.</li>
-                    <li><strong>Pão:</strong> Selecionado especificamente para cada tipo de burger.</li>
-                </ul>
-            </article>
+        <!-- SEÇÃO INTRODUTÓRIA -->
+        <section id="intro" class="intro-section">
+            <h2>Bem-vindo ao Onde comer em João Pessoa</h2>
+            <p>Este espaço é dedicado a compartilhar experiências culinárias autênticas dos restaurantes e lanchonetes mais famosos de João Pessoa. Aqui você encontrará avaliações detalhadas, sugestões de pratos, informações sobre valores e opiniões de quem realmente conhece os melhores sabores da cidade.</p>
+            <p><em>Seja um turista em busca de aventuras gastronômicas ou um morador local descobrindo novos favoritos, você está no lugar certo para encontrar inspiração para sua próxima experiência culinária.</em></p>
         </section>
 
         <hr>
 
-        <section id="criterios">
-            <h2>Critérios de Avaliação</h2>
-            <p>Para chegar a este ranking, utilizei os seguintes parâmetros:</p>
+        <!-- SISTEMA DE ABAS PARA CATEGORIAS -->
+        <div class="tabs-container">
+            <div class="tabs-buttons">
+                <button class="tab-btn active" data-tab="hamburguerias">🍔 Hamburgueria</button>
+                <button class="tab-btn" data-tab="pizzarias">🍕 Pizzaria</button>
+                <button class="tab-btn" data-tab="frutos-mar">🦐 Frutos do Mar</button>
+            </div>
+
+            <div class="tabs-content">
+                <!-- ABA 1: HAMBURGUERIA -->
+                <div id="hamburguerias" class="tab-pane active">
+                    <h2>🍔 Hamburguerias</h2>
+                    <p class="categoria-desc">Descubra as melhores casas de hambúrgueres artesanais de João Pessoa com carne de qualidade, pães premium e montagens incríveis.</p>
+
+                    <article class="restaurante">
+                        <h3>Navarros Burguer</h3>
+                        <p class="info"><strong>Localização:</strong> Jardim Luna</p>
+                        <p class="info"><strong>Tipo:</strong> Fast Food Gourmet</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐⭐ 4.9/5.0</p>
+                        <h4>Especialidades:</h4>
+                        <ul>
+                            <li><strong>Montagem Personalizada:</strong> Crie seu próprio hambúrguer conforme preferência.</li>
+                            <li><strong>Carne de Qualidade:</strong> Defumada por 10 horas com tempero especial.</li>
+                            <li><strong>Variedade de Pães:</strong> Opções diversas de alta qualidade.</li>
+                            <li><strong>Molhos Exclusivos:</strong> Grande variedade de molhos caseiros.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Não deixe de provar o hambúrguer duplo com maionese trufada.</em></p>
+                    </article>
+                    
+                    <article class="restaurante">
+                        <h3>Curral Burguer</h3>
+                        <p class="info"><strong>Localização:</strong> Entrega em Toda a Cidade</p>
+                        <p class="info"><strong>Tipo:</strong> Hambúrguer Smash</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐ 4.8/5.0</p>
+                        <h4>Diferenciais:</h4>
+                        <ul>
+                            <li><strong>Técnica Smash:</strong> Carne prensada com crosta crocante e interior suculento.</li>
+                            <li><strong>Variedade de Sabores:</strong> Opções com frango, salada, bacon e vegetarianas.</li>
+                            <li><strong>Pão Premium:</strong> Brioche de qualidade excepcional.</li>
+                            <li><strong>Picles Artesanais:</strong> Considerados os melhores de toda a cidade.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Aproveite a agilidade de delivery e peça um combo do salada, o picles é incrível.</em></p>
+                    </article>
+
+                    <article class="restaurante">
+                        <h3>Gio Burguer</h3>
+                        <p class="info"><strong>Localização:</strong> Ipês / Estados</p>
+                        <p class="info"><strong>Tipo:</strong> Hamburgueria Sofisticada</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐⭐ 4.7/5.0</p>
+                        <h4>O que a Diferencia:</h4>
+                        <ul>
+                            <li><strong>Cardápio Completo:</strong> Não apenas hambúrgueres, mas possui entradas, sobremesas e bebidas ótimas.</li>
+                            <li><strong>Carne de Qualidade:</strong> Alta, suculenta e preparada no ponto desejado do cliente.</li>
+                            <li><strong>Seleção de Pães:</strong> Cada burger recebe o pão selecionado especificamente para seu tipo.</li>
+                            <li><strong>Ambiente Acolhedor:</strong> Perfeito para saídas em família ou encontros.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Ideal para uma experiência completa:  entrada, siga com o hambúrger e finalize com sobremesa.</em></p>
+                    </article>
+                </div>
+
+                <!-- ABA 2: PIZZARIA -->
+                <div id="pizzarias" class="tab-pane">
+                    <h2>🍕 Pizzarias</h2>
+                    <p class="categoria-desc">As melhores pizzerias de João Pessoa com massa crocante, molho artesanal e ingredientes selecionados.</p>
+
+                    <article class="restaurante">
+                        <h3>Pizzaria do Centro</h3>
+                        <p class="info"><strong>Localização:</strong> Centro Histórico</p>
+                        <p class="info"><strong>Tipo:</strong> Pizzaria Tradicional Italiana</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐ 4.5/5.0</p>
+                        <h4>Especialidades:</h4>
+                        <ul>
+                            <li><strong>Forno de Lenha:</strong> Autêntico forno italiano que garante sabor perfeito.</li>
+                            <li><strong>Massa Artesanal:</strong> Fermentação natural com receita tradicional.</li>
+                            <li><strong>Ingredientes Premium:</strong> Queijos importados e tomate San Marzano.</li>
+                            <li><strong>Variedade de Sabores:</strong> Clássicos e criações do dia.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Peça a Quattro Formaggi, é a melhor.</em></p>
+                    </article>
+
+                    <article class="restaurante">
+                        <h3>Pizza Delivery Express</h3>
+                        <p class="info"><strong>Localização:</strong> Entrega em Toda a Cidade</p>
+                        <p class="info"><strong>Tipo:</strong> Pizzaria para Entrega</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐ 4.4/5.0</p>
+                        <h4>Diferenciais:</h4>
+                        <ul>
+                            <li><strong>Entrega Rápida:</strong> Pizza quente na sua porta em 30 minutos.</li>
+                            <li><strong>Preços Acessíveis:</strong> Ótima qualidade com valores competitivos.</li>
+                            <li><strong>Promoções Frequentes:</strong> Combos e descontos para clientes regulares.</li>
+                            <li><strong>Pizzas Doces:</strong> Variedade de sobremesas em formato de pizza.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Peça a pizza doce de Nutella, é sensacional e perfeita para finalizar com um docinho!</em></p>
+                    </article>
+                </div>
+
+                <!-- ABA 3: FRUTOS DO MAR -->
+                <div id="frutos-mar" class="tab-pane">
+                    <h2>🦐 Frutos do Mar</h2>
+                    <p class="categoria-desc">Experiências gastronômicas com peixes frescos, camarões e frutos do mar preparados na hora.</p>
+
+                    <article class="restaurante">
+                        <h3>Praia do Meio Seafood</h3>
+                        <p class="info"><strong>Localização:</strong> Praia do Meio</p>
+                        <p class="info"><strong>Tipo:</strong> Restaurante de Frutos do Mar</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐ 4.5/5.0</p>
+                        <h4>Especialidades:</h4>
+                        <ul>
+                            <li><strong>Peixe Fresco:</strong> Capturado diariamente e preparado na hora.</li>
+                            <li><strong>Caldo de Frutos do Mar:</strong> Receita tradicional paraibana autêntica.</li>
+                            <li><strong>Camarão à Grega:</strong> Clássico que não decepciona com temperos especiais.</li>
+                            <li><strong>Ambiente com Vista:</strong> Praia como cenário para sua refeição.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Vá no final da tarde e aproveite o pôr do sol junto com frutos do mar frescos.</em></p>
+                    </article>
+
+                    <article class="restaurante">
+                        <h3>Marisqueira da Beira</h3>
+                        <p class="info"><strong>Localização:</strong> Bairro do Potó</p>
+                        <p class="info"><strong>Tipo:</strong> Restaurante Tradicional de Pescado</p>
+                        <p class="info"><strong>Avaliação:</strong> ⭐⭐⭐⭐ 4.6/5.0</p>
+                        <h4>Destaques:</h4>
+                        <ul>
+                            <li><strong>Tradicional Paraibana:</strong> Receitas passadas de geração em geração.</li>
+                            <li><strong>Peixe Frito Crocante:</strong> Técnica perfeita que preserva a umidade da carne.</li>
+                            <li><strong>Molho de Pirarucu:</strong> Receita exclusiva e irreproduzível.</li>
+                            <li><strong>Preço Justo:</strong> Comida de qualidade sem afetar o bolso.</li>
+                        </ul>
+                        <p class="recomendacao"><strong>💡 Recomendação:</strong> <em>Experimente o arroz de marisco, é o prato que os clientes mais pedem.</em></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section id="criterios" class="criterios-section">
+            <h2>📋 Como Avaliamos os Restaurantes</h2>
+            <p>Nossas avaliações levam em consideração diversos critérios para oferecer uma análise justa e completa:</p>
             <ul>
-                <li>Qualidade e frescor do pão.</li>
-                <li>Ponto e tempero da carne.</li>
-                <li>Eficiência no atendimento e entrega.</li>
+                <li><strong>Qualidade dos Ingredientes:</strong> Frescor e origem dos produtos utilizados.</li>
+                <li><strong>Preparação e Técnica:</strong> Execução adequada dos pratos respeitando tradições.</li>
+                <li><strong>Apresentação:</strong> Cuidado visual e organização do prato servido.</li>
+                <li><strong>Atendimento:</strong> Educação, eficiência e atenção dispensados aos clientes.</li>
+                <li><strong>Relação Custo-Benefício:</strong> Valor cobrado versus qualidade oferecida.</li>
+                <li><strong>Ambiente:</strong> Limpeza, conforto e atmosfera do estabelecimento.</li>
+                <li><strong>Inovação:</strong> Criatividade nos pratos mantendo respeito à tradição.</li>
             </ul>
         </section>
 
-        <aside id="dica">
-            <h4 id="dica-titulo">Dica de Pessoense</h4>
-            <p><strong>Para o melhor sabor:</strong> Vá de Navarros.</p>
-            <p><strong>Para rapidez e Smash:</strong> Peça o Curral.</p>
-            <p><strong>Para uma experiência completa (Entrada + Sobremesa):</strong> Vá ao Gio Burguer.</p>
-        </aside>
-
         <hr>
 
-        <section id="formulario">
-            <h2>Envie sua Avaliação ou Sugestão</h2>
-            <p>Compartilhe sua opinião sobre as hamburguerias ou sugira uma nova</p>
+        <section id="formulario" class="formulario-section">
+            <h2>✍️ Compartilhe Sua Experiência Gastronômica</h2>
+            <p>Sua opinião é valiosa! Ajude turistas e moradores locais compartilhando sua experiência em restaurantes e lanchonetes de João Pessoa. Avalie um estabelecimento que visitou ou sugira um lugar que merecia estar nesta lista.</p>
             <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <div class="form-group">
+                    <label for="nome">Seu Nome: <span style="color: red;">*</span></label>
+                    <input type="text" id="nome" name="nome" required placeholder="Como você gostaria de ser identificado?">
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">E-mail: <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                </div>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone">
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(83) 9 0000-0000">
+                </div>
 
-                <label for="data">Data da Visita:</label>
-                <input type="date" id="data" name="data">
+                <div class="form-group">
+                    <label for="data">Data da Visita: <span style="color: red;">*</span></label>
+                    <input type="date" id="data" name="data" required>
+                </div>
 
-                <label for="hamburgueria">Hamburgueria Avaliada:</label>
-                <select id="hamburgueria" name="hamburgueria">
-                    <option value="">Selecione</option>
-                    <option value="navarros">Navarros Burguer</option>
-                    <option value="curral">Curral Burguer</option>
-                    <option value="gio">Gio Burguer</option>
-                    <option value="outra">Outra</option>
-                </select>
+                <div class="form-group">
+                    <label for="restaurante">Qual Restaurante/Lanchonete Você Visitou? <span style="color: red;">*</span></label>
+                    <select id="restaurante" name="restaurante" required>
+                        <option value="">Selecione o estabelecimento</option>
+                        <option value="navarros">Navarros Burguer</option>
+                        <option value="curral">Curral Burguer</option>
+                        <option value="gio">Gio Burguer</option>
+                        <option value="pizzaria-centro">Pizzaria do Centro</option>
+                        <option value="pizza-express">Pizza Delivery Express</option>
+                        <option value="praia-meio">Praia do Meio Seafood</option>
+                        <option value="marisqueira">Marisqueira da Beira</option>
+                        <option value="outro">Outro estabelecimento</option>
+                    </select>
+                </div>
 
-                <label for="avaliacao">Avaliação Geral (1-10):</label>
-                <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" value="5">
+                <div class="form-group">
+                    <label for="prato">Qual Prato Você Pediu?</label>
+                    <input type="text" id="prato" name="prato" placeholder="Ex: Hambúrguer Duplo, Caldo de Frutos do Mar...">
+                </div>
 
-                <label for="comentario">Comentário:</label>
-                <textarea id="comentario" name="comentario" rows="4" placeholder="Conte sua experiência..."></textarea>
+                <div class="form-group">
+                    <label for="avaliacao">Avaliação Geral (1 = Ruim | 10 = Excelente):</label>
+                    <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" value="5">
+                    <p><small>Valor selecionado: <span id="valor-avaliacao">5</span>/10</small></p>
+                </div>
 
-                <button type="submit">Enviar Avaliação</button>
+                <div class="form-group">
+                    <label for="comentario">Sua Avaliação Detalhada:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Conte um pouco mais sobre sua experiência: sabor, atendimento, ambiente, relação custo-benefício..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recomenda">Você recomendaria este restaurante?</label>
+                    <select id="recomenda" name="recomenda">
+                        <option value="">Selecione</option>
+                        <option value="sim">Sim, com certeza!</option>
+                        <option value="talvez">Talvez, depende do tipo de cliente</option>
+                        <option value="nao">Não, precisa melhorar</option>
+                    </select>
+                </div>
+
+                <button type="submit">Enviar Minha Avaliação</button>
+
+                <p><span style="color: red;">*</span> Campos obrigatórios</p>
             </form>
         </section>
     </main>
 
     <footer id="footer">
-        <p>2026 - Escrito por: <strong>Gabriel Coutinho</strong></p>
+        <p>2026 - Escrito por: <strong>Gabriel Coutinho e Rebecca Nery</strong></p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
