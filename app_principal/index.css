@@ -446,7 +446,6 @@ select {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-    align-self: flex-start;
 input[type="date"]:focus,
 textarea:focus,
 select:focus { 
@@ -535,4 +534,178 @@ img, video, iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--space-md);
+}
+
+
+/* MENU HAMBURGUER */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #2c3e50;
+        z-index: 999;
+    }
+
+    .nav-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block !important;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed; 
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        background-color: #27394b;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked ~ .menu-icon {
+        font-size: 0; 
+    }
+    
+    #menu-toggle:checked ~ .menu-icon::after {
+        content: " \2715";
+        font-size: 1.5rem;
+    }
+
+    /* EVITA QUE O ICONE FIQUE SOBRE O TEXTO */
+    .header-content {
+        margin-top: 60px;
+    }
+
+    header h1 {
+        margin-top: 0;
+    }
+}
+
+/* SUPORTE A MODO ESCURO */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-body: #121212;
+        --bg-main: #1e1e1e;
+        --bg-card: #252525;
+        --text-primary: #f5f5f5;
+        --text-secondary: #b0b0b0;
+        --border-color: #333;
+    }
+
+    body {
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        color: var(--text-primary);
+    }
+
+    main {
+        background: var(--bg-main) !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    section, aside {
+        border-bottom-color: var(--border-color) !important;
+    }
+
+    .intro-section {
+        background: linear-gradient(135deg, #16212e 0%, #0d141d 100%) !important;
+        border-left-color: #3498db;
+    }
+
+    .intro-section h2, .intro-section p {
+        color: var(--text-primary) !important;
+    }
+
+    .criterios-section {
+        background: linear-gradient(135deg, #2c1e05 0%, #1a1202 100%) !important;
+        border-left-color: #f39c12;
+        color: #ddd !important;
+    }
+
+    .criterios-section h2 {
+        color: #f39c12 !important;
+    }
+
+    .tab-btn {
+        background: #222;
+        color: #ddd;
+    }
+
+    .tab-btn.active {
+        background: var(--bg-main);
+        color: #e74c3c;
+    }
+
+    .restaurante {
+        background: var(--bg-card) !important;
+        border-left-color: #e74c3c;
+    }
+
+    .restaurante h3, .restaurante h4, .tabs-content h2 {
+        color: var(--text-primary) !important;
+    }
+
+    label {
+        color: var(--text-primary) !important;
+    }
+
+    input, textarea, select {
+        background-color: #2a2a2a !important;
+        color: white !important;
+        border-color: #444 !important;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        background-color: #333 !important;
+        border-color: #e74c3c !important;
+    }
+
+    .formulario-section h2 {
+        color: #ddd !important;
+        border-bottom-color: #e74c3c !important;
+    }
+
+    .formulario-section > p {
+        color: #ddd !important;
+    }
+
+    footer {
+        background-color: #000;
+    }
+}
+
+/* SUPORTE A REDUÇÃO DE MOVIMENTO */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
