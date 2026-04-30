@@ -1,205 +1,221 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1420" width="860" height="1420" font-family="sans-serif">
-  <rect width="860" height="1420" fill="#f8f9fa"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1475" width="860" height="1475" font-family="sans-serif">
+  <rect width="860" height="1475" fill="#f8f9fa"/>
 
-  <!-- Título -->
-  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50">Wireframe — Onde comer em João Pessoa</text>
-  <text x="430" y="52" text-anchor="middle" font-size="11" fill="#888">Projeto Final — Engenharia de Interface HTML5/CSS3</text>
+  <!-- ═══ TÍTULO ════════════════════════════════════════════════════════════ -->
+  <text x="430" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50">Wireframe — Onde comer em João Pessoa</text>
+  <text x="430" y="56" text-anchor="middle" font-size="11" fill="#888">Projeto Final — Engenharia de Interface HTML5/CSS3</text>
 
-  <!-- ============ DESKTOP (esquerda) ============ -->
-  <text x="20" y="78" font-size="12" font-weight="bold" fill="#444">🖥  Desktop (≥ 1024 px)</text>
+  <!-- Labels de coluna -->
+  <text x="20"  y="76" font-size="12" font-weight="bold" fill="#444">🖥  Desktop (≥ 1024 px)</text>
+  <text x="640" y="76" font-size="12" font-weight="bold" fill="#444">📱 Mobile (&lt; 768 px)</text>
 
-  <!-- HEADER -->
-  <rect x="20" y="88" width="580" height="195" rx="4" fill="#dce8f0" stroke="#7fb3d3" stroke-width="1.5"/>
-  <text x="30" y="105" font-size="10" font-weight="bold" fill="#2c6e9c">HEADER</text>
-  <!-- H1 -->
+  <!-- ═══ DESKTOP — HEADER (y=88 → y=303, h=215) ══════════════════════════ -->
+  <rect x="20" y="88" width="580" height="215" rx="4" fill="#dce8f0" stroke="#7fb3d3" stroke-width="1.5"/>
+  <text x="30" y="103" font-size="10" font-weight="bold" fill="#2c6e9c">HEADER</text>
+
+  <!-- H1 rect: y=110 → y=146 (h=36) -->
   <rect x="30" y="110" width="560" height="36" rx="3" fill="#b8d4e8"/>
-  <text x="310" y="133" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">H1 — Onde comer em João Pessoa</text>
-  <!-- Subtitle -->
+  <text x="310" y="131" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">H1 — Onde comer em João Pessoa</text>
+
+  <!-- Subtitle: baseline=158  (gap de 8px abaixo do H1 rect) -->
   <text x="310" y="158" text-anchor="middle" font-size="11" fill="#555">Descubra os Melhores Sabores da Cidade</text>
-  <!-- NAV -->
-  <rect x="30" y="165" width="560" height="30" rx="3" fill="#a8c8e0"/>
-  <text x="30" y="160" font-size="8" fill="#2c6e9c">NAV aria-label="Menu Principal"</text>
-  <text x="120" y="184" text-anchor="middle" font-size="11" fill="#1a3a5c">Opiniões</text>
-  <line x1="190" y1="170" x2="190" y2="195" stroke="#7fb3d3" stroke-width="1"/>
-  <text x="270" y="184" text-anchor="middle" font-size="11" fill="#1a3a5c">📋 Critérios</text>
-  <line x1="350" y1="170" x2="350" y2="195" stroke="#7fb3d3" stroke-width="1"/>
-  <text x="450" y="184" text-anchor="middle" font-size="11" fill="#1a3a5c">✍️ Avaliar</text>
-  <!-- VIDEO -->
-  <rect x="30" y="205" width="560" height="65" rx="3" fill="#c8dce8" stroke="#7fb3d3" stroke-dasharray="5,3"/>
-  <text x="310" y="235" text-anchor="middle" font-size="12" fill="#555">📹  &lt;video controls poster="capa.png"&gt;</text>
-  <text x="310" y="252" text-anchor="middle" font-size="10" fill="#888">section#midia .header-midia</text>
 
-  <!-- MAIN -->
-  <rect x="20" y="298" width="580" height="930" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
-  <text x="30" y="316" font-size="10" font-weight="bold" fill="#444">MAIN id="main-content"</text>
+  <!-- NAV rect: y=168 → y=200 (h=32)  gap=8px abaixo da subtitle -->
+  <rect x="30" y="168" width="560" height="32" rx="3" fill="#a8c8e0"/>
+  <text x="32"  y="178" font-size="8"  fill="#2c6e9c">NAV aria-label="Menu Principal"</text>
+  <text x="115" y="188" text-anchor="middle" font-size="11" fill="#1a3a5c">Opiniões</text>
+  <line x1="185" y1="169" x2="185" y2="200" stroke="#7fb3d3" stroke-width="1"/>
+  <text x="280" y="188" text-anchor="middle" font-size="11" fill="#1a3a5c">📋 Critérios</text>
+  <line x1="365" y1="169" x2="365" y2="200" stroke="#7fb3d3" stroke-width="1"/>
+  <text x="460" y="188" text-anchor="middle" font-size="11" fill="#1a3a5c">✍️ Avaliar</text>
 
-  <!-- section#intro -->
-  <rect x="30" y="322" width="560" height="75" rx="3" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
-  <text x="38" y="337" font-size="8" fill="#3498db">SECTION #intro .intro-section</text>
-  <text x="310" y="355" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">H2 — Bem-vindo ao Onde comer em JP</text>
-  <text x="310" y="372" text-anchor="middle" font-size="10" fill="#555">Texto introdutório sobre a página...</text>
-  <text x="310" y="387" text-anchor="middle" font-size="10" fill="#777" font-style="italic">Texto em itálico complementar...</text>
+  <!-- VIDEO rect: y=210 → y=278 (h=68)  gap=10px abaixo da NAV -->
+  <rect x="30" y="210" width="560" height="68" rx="3" fill="#c8dce8" stroke="#7fb3d3" stroke-dasharray="5,3"/>
+  <text x="310" y="238" text-anchor="middle" font-size="12" fill="#555">📹  &lt;video controls poster="capa.png"&gt;</text>
+  <text x="310" y="256" text-anchor="middle" font-size="10" fill="#888">section#midia  .header-midia</text>
 
-  <!-- TABS container -->
-  <rect x="30" y="412" width="560" height="330" rx="3" fill="#fafafa" stroke="#e0e0e0"/>
-  <text x="38" y="428" font-size="8" fill="#888">.tabs-container</text>
-  <!-- Tab buttons -->
-  <rect x="30" y="430" width="180" height="28" rx="3" fill="#e74c3c"/>
-  <text x="120" y="448" text-anchor="middle" font-size="11" fill="white" font-weight="bold">🍔 Hamburguerias</text>
-  <rect x="215" y="430" width="120" height="28" rx="3" fill="#e8e8e8"/>
-  <text x="275" y="448" text-anchor="middle" font-size="11" fill="#555">🍕 Pizzaria</text>
-  <rect x="340" y="430" width="145" height="28" rx="3" fill="#e8e8e8"/>
-  <text x="412" y="448" text-anchor="middle" font-size="11" fill="#555">🦐 Frutos do Mar</text>
+  <!-- ═══ DESKTOP — MAIN (y=320 → y=1400, h=1080) ═════════════════════════ -->
+  <!-- gap=17px abaixo do HEADER -->
+  <rect x="20" y="320" width="580" height="1080" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1.5"/>
+  <text x="30" y="336" font-size="10" font-weight="bold" fill="#444">MAIN id="main-content"</text>
 
-  <!-- Article 1 -->
-  <rect x="30" y="468" width="560" height="82" rx="2" fill="#f9f9f9"/>
-  <rect x="30" y="468" width="4" height="82" fill="#e74c3c"/>
-  <text x="38" y="463" font-size="8" fill="#888">article.restaurante</text>
-  <text x="44" y="486" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Navarros Burguer</text>
-  <text x="44" y="502" font-size="10" fill="#555">Localização: Jardim Luna  |  Tipo: Fast Food Gourmet  |  ⭐⭐⭐⭐⭐ 4.9</text>
-  <text x="44" y="518" font-size="10" fill="#555">H4 — Especialidades:  • Montagem Personalizada  • Carne Defumada  • Molhos Exclusivos</text>
-  <text x="44" y="534" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Hambúrguer duplo com maionese trufada</text>
+  <!-- ── SECTION #intro (y=344 → y=428, h=84)  gap=8px abaixo do label ── -->
+  <rect x="30" y="344" width="560" height="84" rx="3" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+  <text x="38"  y="358" font-size="8"  fill="#3498db">SECTION #intro .intro-section</text>
+  <text x="310" y="376" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">H2 — Bem-vindo ao Onde comer em JP</text>
+  <text x="310" y="394" text-anchor="middle" font-size="10" fill="#555">Texto introdutório sobre a página...</text>
+  <text x="310" y="410" text-anchor="middle" font-size="10" fill="#777" font-style="italic">Texto em itálico complementar...</text>
 
-  <!-- Article 2 -->
-  <rect x="30" y="558" width="560" height="82" rx="2" fill="#f9f9f9"/>
-  <rect x="30" y="558" width="4" height="82" fill="#e74c3c"/>
-  <text x="44" y="576" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Curral Burguer</text>
-  <text x="44" y="592" font-size="10" fill="#555">Localização: Entrega em Toda a Cidade  |  Tipo: Hambúrguer Smash  |  ⭐⭐⭐⭐ 4.8</text>
-  <text x="44" y="608" font-size="10" fill="#555">H4 — Diferenciais:  • Técnica Smash  • Brioche Premium  • Picles Artesanais</text>
-  <text x="44" y="624" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Combo salada com picles</text>
+  <!-- ── .tabs-container (y=444 → y=810, h=366)  gap=16px ── -->
+  <rect x="30" y="444" width="560" height="366" rx="3" fill="#fafafa" stroke="#e0e0e0"/>
+  <text x="38" y="458" font-size="8" fill="#888">.tabs-container</text>
 
-  <!-- Article 3 -->
-  <rect x="30" y="648" width="560" height="82" rx="2" fill="#f9f9f9"/>
-  <rect x="30" y="648" width="4" height="82" fill="#e74c3c"/>
-  <text x="44" y="666" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Gio Burguer</text>
-  <text x="44" y="682" font-size="10" fill="#555">Localização: Ipês/Estados  |  Tipo: Hamburgueria Sofisticada  |  ⭐⭐⭐⭐⭐ 4.7</text>
-  <text x="44" y="698" font-size="10" fill="#555">H4 — Diferenciais:  • Cardápio Completo  • Ambiente Acolhedor</text>
-  <text x="44" y="714" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Experiência completa — entrada, burger, sobremesa</text>
+  <!-- Tab buttons: y=464 → y=492 (h=28) -->
+  <rect x="30"  y="464" width="180" height="28" rx="3" fill="#e74c3c"/>
+  <text x="120" y="482" text-anchor="middle" font-size="11" fill="white" font-weight="bold">🍔 Hamburguerias</text>
+  <rect x="215" y="464" width="120" height="28" rx="3" fill="#e8e8e8"/>
+  <text x="275" y="482" text-anchor="middle" font-size="11" fill="#555">🍕 Pizzaria</text>
+  <rect x="340" y="464" width="145" height="28" rx="3" fill="#e8e8e8"/>
+  <text x="412" y="482" text-anchor="middle" font-size="11" fill="#555">🦐 Frutos do Mar</text>
 
-  <!-- section#criterios -->
-  <rect x="30" y="758" width="560" height="115" rx="3" fill="#fff5e6" stroke="#f39c12" stroke-width="2"/>
-  <text x="38" y="773" font-size="8" fill="#f39c12">SECTION #criterios .criterios-section</text>
-  <text x="310" y="790" text-anchor="middle" font-size="12" font-weight="bold" fill="#d68910">H2 — 📋 Como Avaliamos os Restaurantes</text>
-  <text x="44" y="808" font-size="10" fill="#555">• Qualidade dos Ingredientes    • Preparação e Técnica    • Apresentação</text>
-  <text x="44" y="824" font-size="10" fill="#555">• Atendimento    • Relação Custo-Benefício    • Ambiente    • Inovação</text>
-  <text x="44" y="840" font-size="9" fill="#888">7 critérios objetivos e subjetivos avaliados em cada visita</text>
-  <text x="44" y="862" font-size="9" fill="#888">ul &gt; li (lista não ordenada com 7 itens)</text>
+  <!-- Article 1: y=506 → y=596 (h=90)  label acima, gap=14px dos botões -->
+  <text x="38"  y="502" font-size="8" fill="#888">article.restaurante</text>
+  <rect x="30"  y="506" width="560" height="90" rx="2" fill="#f9f9f9"/>
+  <rect x="30"  y="506" width="4"   height="90" fill="#e74c3c"/>
+  <text x="44"  y="524" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Navarros Burguer</text>
+  <text x="44"  y="542" font-size="10" fill="#555">Localização: Jardim Luna  |  Tipo: Fast Food Gourmet  |  ⭐⭐⭐⭐⭐ 4.9</text>
+  <text x="44"  y="558" font-size="10" fill="#555">H4 — Especialidades:  • Montagem Personalizada  • Carne Defumada  • Molhos Exclusivos</text>
+  <text x="44"  y="578" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Hambúrguer duplo com maionese trufada</text>
 
-  <!-- section#formulario -->
-  <rect x="30" y="888" width="560" height="325" rx="3" fill="#f8f8ff" stroke="#bdc3c7"/>
-  <text x="38" y="903" font-size="8" fill="#888">SECTION #formulario .formulario-section  —  form[action="#" method="post"]</text>
-  <text x="310" y="920" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">H2 — ✍️ Compartilhe Sua Experiência Gastronômica</text>
+  <!-- Article 2: y=608 → y=698 (h=90)  gap=12px -->
+  <rect x="30"  y="608" width="560" height="90" rx="2" fill="#f9f9f9"/>
+  <rect x="30"  y="608" width="4"   height="90" fill="#e74c3c"/>
+  <text x="44"  y="626" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Curral Burguer</text>
+  <text x="44"  y="644" font-size="10" fill="#555">Localização: Entrega em Toda a Cidade  |  Tipo: Hambúrguer Smash  |  ⭐⭐⭐⭐ 4.8</text>
+  <text x="44"  y="660" font-size="10" fill="#555">H4 — Diferenciais:  • Técnica Smash  • Brioche Premium  • Picles Artesanais</text>
+  <text x="44"  y="678" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Combo salada com picles</text>
 
-  <!-- Form row 1 -->
-  <rect x="44" y="930" width="250" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="948" font-size="10" fill="#aaa">Nome* (input type="text")</text>
-  <rect x="316" y="930" width="259" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="322" y="948" font-size="10" fill="#aaa">E-mail* (input type="email")</text>
-  <!-- Form row 2 -->
-  <rect x="44" y="970" width="250" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="988" font-size="10" fill="#aaa">Telefone (input type="tel")</text>
-  <rect x="316" y="970" width="259" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="322" y="988" font-size="10" fill="#aaa">Data da Visita* (input type="date")</text>
-  <!-- Select restaurante -->
-  <rect x="44" y="1010" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="1028" font-size="10" fill="#aaa">Qual Restaurante Você Visitou?* (select)</text>
-  <!-- Input prato -->
-  <rect x="44" y="1050" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="1068" font-size="10" fill="#aaa">Prato Pedido (input type="text")</text>
-  <!-- Range -->
-  <text x="50" y="1088" font-size="10" fill="#555">Avaliação Geral (1–10):</text>
-  <rect x="44" y="1093" width="531" height="8" rx="4" fill="#bdc3c7"/>
-  <circle cx="240" cy="1097" r="8" fill="#e74c3c"/>
-  <!-- Textarea -->
-  <rect x="44" y="1115" width="531" height="55" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="1136" font-size="10" fill="#aaa">Avaliação Detalhada... (textarea rows="5")</text>
-  <!-- Select recomenda -->
-  <rect x="44" y="1182" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="50" y="1200" font-size="10" fill="#aaa">Recomendaria este restaurante? (select)</text>
-  <!-- Submit button -->
-  <rect x="44" y="1220" width="210" height="36" rx="6" fill="#e74c3c"/>
-  <text x="149" y="1243" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Enviar Minha Avaliação</text>
+  <!-- Article 3: y=710 → y=800 (h=90)  gap=12px -->
+  <rect x="30"  y="710" width="560" height="90" rx="2" fill="#f9f9f9"/>
+  <rect x="30"  y="710" width="4"   height="90" fill="#e74c3c"/>
+  <text x="44"  y="728" font-size="12" font-weight="bold" fill="#2c3e50">H3 — Gio Burguer</text>
+  <text x="44"  y="746" font-size="10" fill="#555">Localização: Ipês/Estados  |  Tipo: Hamburgueria Sofisticada  |  ⭐⭐⭐⭐⭐ 4.7</text>
+  <text x="44"  y="762" font-size="10" fill="#555">H4 — Diferenciais:  • Cardápio Completo  • Ambiente Acolhedor</text>
+  <text x="44"  y="780" font-size="10" fill="#888" font-style="italic">💡 Recomendação: Experiência completa — entrada, burger, sobremesa</text>
+  <!-- tabs bottom=810, art3 bottom=800  →  10px padding inferior ✓ -->
 
-  <!-- FOOTER -->
-  <rect x="20" y="1244" width="580" height="48" rx="4" fill="#2c3e50"/>
-  <text x="310" y="1272" text-anchor="middle" font-size="12" fill="white">FOOTER — 2026 · Gabriel Coutinho e Rebecca Nery</text>
+  <!-- ── SECTION #criterios (y=826 → y=952, h=126)  gap=16px ── -->
+  <rect x="30" y="826" width="560" height="126" rx="3" fill="#fff5e6" stroke="#f39c12" stroke-width="2"/>
+  <text x="38"  y="840" font-size="8"  fill="#f39c12">SECTION #criterios .criterios-section</text>
+  <text x="310" y="858" text-anchor="middle" font-size="12" font-weight="bold" fill="#d68910">H2 — 📋 Como Avaliamos os Restaurantes</text>
+  <text x="44"  y="876" font-size="10" fill="#555">• Qualidade dos Ingredientes    • Preparação e Técnica    • Apresentação</text>
+  <text x="44"  y="894" font-size="10" fill="#555">• Atendimento    • Relação Custo-Benefício    • Ambiente    • Inovação</text>
+  <text x="44"  y="912" font-size="9"  fill="#888">7 critérios avaliados em cada visita — ul &gt; li (lista não ordenada)</text>
 
-  <!-- ============ MOBILE (direita) ============ -->
-  <text x="640" y="78" font-size="12" font-weight="bold" fill="#444">📱 Mobile (&lt; 768 px)</text>
+  <!-- ── SECTION #formulario (y=968 → y=1388, h=420)  gap=16px ── -->
+  <rect x="30" y="968" width="560" height="420" rx="3" fill="#f8f8ff" stroke="#bdc3c7"/>
+  <text x="38"  y="982" font-size="8" fill="#888">SECTION #formulario .formulario-section  —  form[action="#" method="post"]</text>
+  <text x="310" y="1002" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">H2 — ✍️ Compartilhe Sua Experiência Gastronômica</text>
 
-  <!-- Phone frame -->
-  <rect x="632" y="88" width="208" height="440" rx="16" fill="#e8ecf0" stroke="#95a5a6" stroke-width="2"/>
+  <!-- Row 1: y=1018 → y=1046 (h=28)  gap=16px abaixo do H2 -->
+  <rect x="44"  y="1018" width="250" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1036" font-size="10" fill="#aaa">Nome* (input type="text")</text>
+  <rect x="316" y="1018" width="259" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="322" y="1036" font-size="10" fill="#aaa">E-mail* (input type="email")</text>
 
-  <!-- Mobile Header -->
-  <rect x="640" y="100" width="192" height="155" rx="4" fill="#dce8f0" stroke="#7fb3d3" stroke-width="1"/>
+  <!-- Row 2: y=1058 → y=1086 (h=28)  gap=12px -->
+  <rect x="44"  y="1058" width="250" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1076" font-size="10" fill="#aaa">Telefone (input type="tel")</text>
+  <rect x="316" y="1058" width="259" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="322" y="1076" font-size="10" fill="#aaa">Data da Visita* (input type="date")</text>
+
+  <!-- Select restaurante: y=1098 → y=1126 (h=28)  gap=12px -->
+  <rect x="44"  y="1098" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1116" font-size="10" fill="#aaa">Qual Restaurante Você Visitou?* (select)</text>
+
+  <!-- Input prato: y=1138 → y=1166 (h=28)  gap=12px -->
+  <rect x="44"  y="1138" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1156" font-size="10" fill="#aaa">Prato Pedido (input type="text")</text>
+
+  <!-- Range: label baseline=1182 (gap=16px abaixo do input) -->
+  <text x="50"  y="1182" font-size="10" fill="#555">Avaliação Geral (1–10):</text>
+  <rect x="44"  y="1188" width="531" height="8"  rx="4" fill="#bdc3c7"/>
+  <circle cx="240" cy="1192" r="8" fill="#e74c3c"/>
+
+  <!-- Textarea: y=1212 → y=1272 (h=60)  gap=12px abaixo do circle bottom 1200 -->
+  <rect x="44"  y="1212" width="531" height="60" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1234" font-size="10" fill="#aaa">Avaliação Detalhada... (textarea rows="5")</text>
+
+  <!-- Select recomenda: y=1284 → y=1312 (h=28)  gap=12px -->
+  <rect x="44"  y="1284" width="531" height="28" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="50"  y="1302" font-size="10" fill="#aaa">Recomendaria este restaurante? (select)</text>
+
+  <!-- Submit button: y=1324 → y=1360 (h=36)  gap=12px -->
+  <rect x="44"  y="1324" width="220" height="36" rx="6" fill="#e74c3c"/>
+  <text x="154" y="1347" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Enviar Minha Avaliação</text>
+  <!-- button bottom=1360, form bottom=1388 → 28px padding inferior ✓ -->
+
+  <!-- ═══ DESKTOP — FOOTER (y=1414 → y=1462, h=48)  gap=14px ═════════════ -->
+  <rect x="20"  y="1414" width="580" height="48" rx="4" fill="#2c3e50"/>
+  <text x="310" y="1442" text-anchor="middle" font-size="12" fill="white">FOOTER — 2026 · Gabriel Coutinho e Rebecca Nery</text>
+
+  <!-- ═══ MOBILE — Phone frame (y=88 → y=470, h=382) ══════════════════════ -->
+  <rect x="632" y="88" width="208" height="382" rx="16" fill="#e8ecf0" stroke="#95a5a6" stroke-width="2"/>
+
+  <!-- Mobile Header: y=100 → y=222 (h=122) -->
+  <rect x="640" y="100" width="192" height="122" rx="4" fill="#dce8f0" stroke="#7fb3d3" stroke-width="1"/>
   <text x="648" y="114" font-size="8" fill="#2c6e9c">HEADER</text>
-  <!-- Hamburger button -->
-  <rect x="645" y="118" width="32" height="26" rx="4" fill="#27394b"/>
-  <text x="661" y="135" text-anchor="middle" font-size="14" fill="white">☰</text>
-  <text x="648" y="155" font-size="8" fill="#888">.menu-icon (position: fixed)</text>
-  <!-- H1 mobile -->
+
+  <!-- Hamburger: y=120 → y=146 (h=26) -->
+  <rect x="645" y="120" width="32" height="26" rx="4" fill="#27394b"/>
+  <text x="661" y="137" text-anchor="middle" font-size="14" fill="white">☰</text>
+  <text x="648" y="154" font-size="8" fill="#888">.menu-icon (position: fixed)</text>
+
+  <!-- H1 mobile: baselines 130, 144 -->
   <text x="736" y="130" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">H1: Onde comer</text>
-  <text x="736" y="143" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">em João Pessoa</text>
-  <!-- Video mobile -->
-  <rect x="648" y="160" width="176" height="48" rx="3" fill="#c8dce8" stroke="#7fb3d3" stroke-dasharray="4,2"/>
-  <text x="736" y="190" text-anchor="middle" font-size="10" fill="#666">📹 VIDEO</text>
-  <text x="736" y="204" text-anchor="middle" font-size="8" fill="#999">(largura: 100%)</text>
-  <text x="736" y="220" text-anchor="middle" font-size="8" fill="#888">margin-top: 60px (evita sobreposição</text>
-  <text x="736" y="232" text-anchor="middle" font-size="8" fill="#888">do ícone hamburguer)</text>
+  <text x="736" y="144" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">em João Pessoa</text>
 
-  <!-- Mobile Main -->
-  <rect x="640" y="270" width="192" height="215" rx="4" fill="white" stroke="#bdc3c7"/>
-  <text x="648" y="284" font-size="8" fill="#444">MAIN (coluna única)</text>
+  <!-- Video mobile: y=162 → y=212 (h=50) -->
+  <rect x="648" y="162" width="176" height="50" rx="3" fill="#c8dce8" stroke="#7fb3d3" stroke-dasharray="4,2"/>
+  <text x="736" y="190" text-anchor="middle" font-size="10" fill="#666">📹 VIDEO  (width: 100%)</text>
 
-  <!-- Intro mobile -->
-  <rect x="648" y="290" width="176" height="36" rx="3" fill="#e8f4f8" stroke="#3498db"/>
-  <text x="736" y="312" text-anchor="middle" font-size="9" fill="#2c3e50">SECTION INTRO</text>
+  <!-- Mobile Main: y=236 → y=414 (h=178)  gap=14px abaixo do header -->
+  <rect x="640" y="236" width="192" height="178" rx="4" fill="white" stroke="#bdc3c7"/>
+  <text x="648" y="250" font-size="8" fill="#444">MAIN (coluna única)</text>
 
-  <!-- Tabs mobile (scroll horizontal) -->
-  <text x="648" y="342" font-size="8" fill="#888">.tabs-buttons  (flex-wrap + overflow-x: auto)</text>
-  <rect x="648" y="348" width="84" height="22" rx="3" fill="#e74c3c"/>
-  <text x="690" y="363" text-anchor="middle" font-size="8" fill="white">🍔 Hamburgueria</text>
-  <rect x="736" y="348" width="60" height="22" rx="3" fill="#e8e8e8"/>
-  <text x="766" y="363" text-anchor="middle" font-size="8" fill="#555">🍕 Pizza ›</text>
+  <!-- Mobile Intro: y=256 → y=292 (h=36)  gap=6px abaixo do label -->
+  <rect x="648" y="256" width="176" height="36" rx="3" fill="#e8f4f8" stroke="#3498db"/>
+  <text x="736" y="278" text-anchor="middle" font-size="9" fill="#2c3e50">SECTION INTRO</text>
 
-  <!-- Article mobile -->
-  <rect x="648" y="378" width="176" height="65" rx="2" fill="#f9f9f9"/>
-  <rect x="648" y="378" width="3" height="65" fill="#e74c3c"/>
-  <text x="656" y="395" font-size="9" font-weight="bold" fill="#2c3e50">H3 — Navarros Burguer</text>
-  <text x="656" y="410" font-size="8" fill="#555">⭐⭐⭐⭐⭐ 4.9 · Jardim Luna</text>
-  <text x="656" y="424" font-size="8" fill="#555">• Especialidade 1</text>
-  <text x="656" y="436" font-size="8" fill="#888" font-style="italic">💡 Recomendação...</text>
+  <!-- Mobile Tabs: label e botões  gap=12px abaixo do intro -->
+  <text x="648" y="314" font-size="8" fill="#888">.tabs-buttons (flex-wrap)</text>
+  <rect x="648" y="320" width="84"  height="22" rx="3" fill="#e74c3c"/>
+  <text x="690" y="335" text-anchor="middle" font-size="8" fill="white">🍔 Hamburgueria</text>
+  <rect x="736" y="320" width="60"  height="22" rx="3" fill="#e8e8e8"/>
+  <text x="766" y="335" text-anchor="middle" font-size="8" fill="#555">🍕 Pizza ›</text>
 
-  <!-- Mobile Footer -->
-  <rect x="640" y="498" width="192" height="30" rx="4" fill="#2c3e50"/>
-  <text x="736" y="517" text-anchor="middle" font-size="9" fill="white">FOOTER</text>
+  <!-- Mobile Article: y=354 → y=408 (h=54)  gap=12px abaixo dos botões -->
+  <rect x="648" y="354" width="176" height="54" rx="2" fill="#f9f9f9"/>
+  <rect x="648" y="354" width="3"   height="54" fill="#e74c3c"/>
+  <text x="656" y="371" font-size="9" font-weight="bold" fill="#2c3e50">H3 — Navarros Burguer</text>
+  <text x="656" y="386" font-size="8" fill="#555">⭐⭐⭐⭐⭐ 4.9 · Jardim Luna</text>
+  <text x="656" y="399" font-size="8" fill="#888" font-style="italic">💡 Recomendação...</text>
+  <!-- article bottom=408, main bottom=414 → 6px padding inferior ✓ -->
 
-  <!-- Menu overlay note -->
-  <rect x="632" y="545" width="208" height="68" rx="4" fill="#fff8e1" stroke="#f39c12" stroke-dasharray="4,3"/>
-  <text x="736" y="563" text-anchor="middle" font-size="9" font-weight="bold" fill="#d68910">Menu Hamburguer (overlay)</text>
-  <text x="736" y="578" text-anchor="middle" font-size="8" fill="#555">nav { position: fixed; width: 100vw }</text>
-  <text x="736" y="591" text-anchor="middle" font-size="8" fill="#555">#menu-toggle:checked ~ nav { display: block }</text>
-  <text x="736" y="604" text-anchor="middle" font-size="8" fill="#888">Fecha com ✕ (pseudo-element ::after)</text>
+  <!-- Mobile Footer: y=428 → y=458 (h=30)  gap=14px abaixo do main -->
+  <rect x="640" y="428" width="192" height="30" rx="4" fill="#2c3e50"/>
+  <text x="736" y="447" text-anchor="middle" font-size="9" fill="white">FOOTER</text>
+  <!-- footer bottom=458, phone frame bottom=470 → 12px padding inferior ✓ -->
 
-  <!-- ============ ANOTAÇÕES ============ -->
-  <rect x="632" y="628" width="208" height="185" rx="4" fill="#f0f4f8" stroke="#7fb3d3"/>
-  <text x="736" y="646" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Hierarquia Semântica</text>
-  <text x="642" y="663" font-size="9" fill="#333">H1 · Título da página (único por página)</text>
-  <text x="642" y="678" font-size="9" fill="#333">H2 · Seções principais (intro, tabs, critérios, form)</text>
-  <text x="642" y="693" font-size="9" fill="#333">H3 · Nome de cada restaurante</text>
-  <text x="642" y="708" font-size="9" fill="#333">H4 · Especialidades / Diferenciais</text>
+  <!-- ═══ MOBILE — Menu overlay note (y=486 → y=554, h=68) ════════════════ -->
+  <!-- gap=16px abaixo do phone frame -->
+  <rect x="632" y="486" width="208" height="68" rx="4" fill="#fff8e1" stroke="#f39c12" stroke-dasharray="4,3"/>
+  <text x="736" y="504" text-anchor="middle" font-size="9" font-weight="bold" fill="#d68910">Menu Hamburguer (overlay)</text>
+  <text x="736" y="520" text-anchor="middle" font-size="8" fill="#555">nav { position: fixed; width: 100vw }</text>
+  <text x="736" y="534" text-anchor="middle" font-size="8" fill="#555">#menu-toggle:checked ~ nav { display: block }</text>
+  <text x="736" y="548" text-anchor="middle" font-size="8" fill="#888">Fecha com ✕ (pseudo-element ::after)</text>
 
-  <line x1="632" y1="718" x2="840" y2="718" stroke="#7fb3d3" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- ═══ ANOTAÇÕES (y=570 → y=810, h=240) ═══════════════════════════════ -->
+  <!-- gap=16px abaixo do overlay -->
+  <rect x="632" y="570" width="208" height="240" rx="4" fill="#f0f4f8" stroke="#7fb3d3"/>
 
-  <text x="736" y="734" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Breakpoints</text>
-  <text x="642" y="751" font-size="9" fill="#333">Mobile  :  &lt; 768 px  →  1 coluna, nav hamburguer</text>
-  <text x="642" y="766" font-size="9" fill="#333">Tablet  :  ≥ 768 px  →  2 colunas (240px sidebar)</text>
-  <text x="642" y="781" font-size="9" fill="#333">Desktop : ≥ 1024 px  →  2 colunas (380px sidebar)</text>
+  <text x="736" y="590" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Hierarquia Semântica</text>
+  <text x="642" y="608" font-size="9" fill="#333">H1 · Título da página (único por página)</text>
+  <text x="642" y="624" font-size="9" fill="#333">H2 · Seções principais (intro, tabs, critérios, form)</text>
+  <text x="642" y="640" font-size="9" fill="#333">H3 · Nome de cada restaurante</text>
+  <text x="642" y="656" font-size="9" fill="#333">H4 · Especialidades / Diferenciais</text>
 
-  <line x1="632" y1="791" x2="840" y2="791" stroke="#7fb3d3" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="632" y1="668" x2="840" y2="668" stroke="#7fb3d3" stroke-width="1" stroke-dasharray="3,2"/>
 
-  <text x="736" y="806" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Acessibilidade</text>
-  <text x="642" y="820" font-size="8" fill="#555">• Skip link: "Pular para conteúdo"</text>
-  <text x="642" y="833" font-size="8" fill="#555">• aria-label no &lt;nav&gt;</text>
-  <text x="642" y="846" font-size="8" fill="#555">• Campos obrigatórios com required</text>
+  <text x="736" y="686" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Breakpoints</text>
+  <text x="642" y="704" font-size="9" fill="#333">Mobile  : &lt; 768 px  →  1 coluna, nav hamburguer</text>
+  <text x="642" y="720" font-size="9" fill="#333">Tablet  : ≥ 768 px  →  padding expandido</text>
+  <text x="642" y="736" font-size="9" fill="#333">Desktop : ≥ 1024 px →  padding maior</text>
+
+  <line x1="632" y1="748" x2="840" y2="748" stroke="#7fb3d3" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <text x="736" y="766" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c6e9c">📌 Acessibilidade</text>
+  <text x="642" y="784" font-size="9" fill="#555">• Skip link: "Pular para conteúdo"</text>
+  <text x="642" y="800" font-size="9" fill="#555">• aria-label no &lt;nav&gt;</text>
+  <!-- annotations bottom=810, last text bottom≈802 → 8px padding inferior ✓ -->
 </svg>
