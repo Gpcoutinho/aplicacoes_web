@@ -1,0 +1,65 @@
+/* Modern CSS Reset — baseado em Josh W. Comeau / Andy Bell */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    line-height: var(--lh-normal);
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    color: #2c3e50;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+section, aside {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type,
+aside:last-of-type {
+    border-bottom: none;
+}

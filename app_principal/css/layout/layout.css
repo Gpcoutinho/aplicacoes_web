@@ -1,0 +1,82 @@
+/* === LAYOUT — estrutura de página: header, main, footer e grid responsivo === */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0 0 1rem 0;
+    font-size: var(--fs-md);
+    opacity: 0.9;
+}
+
+.header-midia {
+    max-width: 900px;
+    margin: 1.5rem auto 0;
+    padding: 0 !important;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: var(--space-sm);
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ── TABLET: >= 768px ─────────────────────────────── */
+@media (min-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: var(--space-sm) var(--space-lg);
+    }
+
+    main {
+        padding: var(--space-md) var(--space-lg);
+    }
+}
+
+/* ── DESKTOP: >= 1024px ───────────────────────────── */
+@media (min-width: 1024px) {
+    main {
+        padding: var(--space-lg) var(--space-xl);
+    }
+}

@@ -1,0 +1,28 @@
+/* === UTILITIES — classes utilitárias e ajustes de acessibilidade === */
+
+hr {
+    border: none;
+    border-top: 2px solid #ecf0f1;
+    margin: 2rem 0;
+}
+
+#valor-avaliacao {
+    font-weight: var(--fw-bold);
+    color: #e74c3c;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-md);
+}
+
+/* Respeita preferência de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

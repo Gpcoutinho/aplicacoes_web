@@ -1,0 +1,525 @@
+/* === COMPONENTS — nav, hamburger, tabs, cards, seções e formulário === */
+
+/* ── NAVEGAÇÃO ────────────────────────────────────── */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-md);
+    max-width: 900px;
+    margin: 1rem auto 0;
+}
+
+.nav-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-principal li {
+    display: inline;
+    padding: 0.6rem 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.3s ease;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ── MENU HAMBURGUER ──────────────────────────────── */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #2c3e50;
+        z-index: 999;
+    }
+
+    .nav-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block !important;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        background-color: #27394b;
+        color: white;
+        padding: 10px 15px;
+        border-radius: var(--radius-md);
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked ~ .menu-icon {
+        font-size: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-icon::after {
+        content: " \2715";
+        font-size: 1.5rem;
+    }
+
+    .header-content {
+        margin-top: 60px;
+    }
+
+    header h1 {
+        margin-top: 0;
+    }
+}
+
+/* ── SISTEMA DE ABAS ──────────────────────────────── */
+.tabs-container {
+    margin: 2rem 0;
+}
+
+.tabs-buttons {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 1rem 1.5rem;
+    background: #f0f0f0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: #555;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-btn:hover {
+    background: #e8e8e8;
+    color: #2c3e50;
+}
+
+.tab-btn.active {
+    background: white;
+    color: #e74c3c;
+    border-bottom-color: #e74c3c;
+}
+
+.tabs-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.categoria-desc {
+    font-size: var(--fs-md);
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* ── CARDS DE RESTAURANTE ─────────────────────────── */
+.categoria {
+    scroll-margin-top: 100px;
+}
+
+.categoria h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.restaurante {
+    background: var(--color-bg-card);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #e74c3c;
+    border-radius: var(--radius-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurante:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.15);
+}
+
+.restaurante h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: var(--fs-lg);
+}
+
+.restaurante h4 {
+    color: #34495e;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: var(--fs-md);
+}
+
+.restaurante .info {
+    margin: 0.3rem 0;
+    font-size: var(--fs-sm);
+}
+
+.restaurante ul {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+}
+
+.restaurante li {
+    margin-bottom: 0.5rem;
+    line-height: var(--lh-normal);
+}
+
+/* ── SEÇÃO INTRODUÇÃO ─────────────────────────────── */
+.intro-section {
+    background: linear-gradient(135deg, #e8f4f8 0%, #e0f2f1 100%);
+    border-radius: var(--radius-md);
+    border-left: 4px solid #3498db;
+    margin-top: 2rem;
+}
+
+.intro-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom-color: #3498db;
+}
+
+.intro-section p {
+    line-height: var(--lh-loose);
+    font-size: var(--fs-md);
+    color: #34495e;
+}
+
+/* ── SEÇÃO CRITÉRIOS ──────────────────────────────── */
+.criterios-section {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+    border-left: 4px solid #f39c12;
+    border-radius: var(--radius-sm);
+}
+
+.criterios-section h2 {
+    color: #d68910;
+    border-bottom-color: #f39c12;
+}
+
+.criterios-section p {
+    margin: 0.8rem 0;
+    line-height: var(--lh-normal);
+}
+
+.criterios-section ul {
+    padding-left: 1.5rem;
+}
+
+.criterios-section li {
+    margin-bottom: 0.8rem;
+    line-height: var(--lh-normal);
+}
+
+.criterios-section hr {
+    margin: 1.5rem 0;
+}
+
+.criterios {
+    background: #fffacd;
+    padding: 0.8rem;
+    border-radius: var(--radius-sm);
+    margin: 1rem 0 0;
+    font-size: var(--fs-sm);
+}
+
+/* ── SEÇÃO FORMULÁRIO ─────────────────────────────── */
+.formulario-section {
+    scroll-margin-top: 100px;
+}
+
+.formulario-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom-color: #e74c3c;
+}
+
+.formulario-section > p {
+    margin-bottom: 2rem;
+    font-size: var(--fs-md);
+    color: #555;
+    line-height: var(--lh-normal);
+}
+
+.recomendacao {
+    margin-top: 0.5rem;
+}
+
+/* ── FORMULÁRIO ───────────────────────────────────── */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+label {
+    font-weight: var(--fw-semibold);
+    color: #2c3e50;
+    font-size: var(--fs-sm);
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    padding: 0.95rem;
+    border: 2px solid #bdc3c7;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--fs-base);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #95a5a6;
+    background-color: #f5f5f5;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #bdc3c7;
+    outline: none;
+    -webkit-appearance: none;
+    margin: 0.5rem 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e74c3c;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #c0392b;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e74c3c;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #c0392b;
+}
+
+button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: var(--fw-semibold);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ── MODO ESCURO ──────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        color: #f5f5f5;
+    }
+
+    main {
+        background: #1e1e1e !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    section, aside {
+        border-bottom-color: #333 !important;
+    }
+
+    .intro-section {
+        background: linear-gradient(135deg, #16212e 0%, #0d141d 100%) !important;
+        border-left-color: #3498db;
+    }
+
+    .intro-section h2,
+    .intro-section p {
+        color: #F9FAFB !important;
+    }
+
+    .criterios-section {
+        background: linear-gradient(135deg, #2c1e05 0%, #1a1202 100%) !important;
+        border-left-color: #f39c12;
+        color: #ddd !important;
+    }
+
+    .criterios-section h2 {
+        color: #f39c12 !important;
+    }
+
+    .tab-btn {
+        background: #222;
+        color: #ddd;
+    }
+
+    .tab-btn.active {
+        background: #1e1e1e;
+        color: #e74c3c;
+    }
+
+    .restaurante {
+        background: #252525 !important;
+        border-left-color: #e74c3c;
+    }
+
+    .restaurante h3,
+    .restaurante h4,
+    .tabs-content h2 {
+        color: #F9FAFB !important;
+    }
+
+    label {
+        color: #F9FAFB !important;
+    }
+
+    input, textarea, select {
+        background-color: #2a2a2a !important;
+        color: white !important;
+        border-color: #444 !important;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        background-color: #333 !important;
+        border-color: #e74c3c !important;
+    }
+
+    .formulario-section h2 {
+        color: #ddd !important;
+        border-bottom-color: #e74c3c !important;
+    }
+
+    .formulario-section > p {
+        color: #ddd !important;
+    }
+
+    footer {
+        background-color: #000;
+    }
+}
