@@ -1,0 +1,41 @@
+/* ── NAVEGAÇÃO ────────────────────────────────────── */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-md);
+    max-width: 900px;
+    margin: 1rem auto 0;
+}
+
+.nav-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-principal li {
+    display: inline;
+    padding: 0.6rem 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.3s ease;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}

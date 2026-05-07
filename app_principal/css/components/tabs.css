@@ -1,0 +1,62 @@
+/* ── SISTEMA DE ABAS ──────────────────────────────── */
+.tabs-container {
+    margin: 2rem 0;
+}
+
+.tabs-buttons {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 1rem 1.5rem;
+    background: #f0f0f0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: #555;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-btn:hover {
+    background: #e8e8e8;
+    color: #2c3e50;
+}
+
+.tab-btn.active {
+    background: white;
+    color: #e74c3c;
+    border-bottom-color: #e74c3c;
+}
+
+.tabs-content {
+    position: relative;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.categoria-desc {
+    font-size: var(--fs-md);
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,149 @@
+/* ── SEÇÃO FORMULÁRIO ─────────────────────────────── */
+.formulario-section {
+    scroll-margin-top: 100px;
+}
+
+.formulario-section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom-color: #e74c3c;
+}
+
+.formulario-section > p {
+    margin-bottom: 2rem;
+    font-size: var(--fs-md);
+    color: #555;
+    line-height: var(--lh-normal);
+}
+
+.recomendacao {
+    margin-top: 0.5rem;
+}
+
+/* ── FORMULÁRIO ───────────────────────────────────── */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+label {
+    font-weight: var(--fw-semibold);
+    color: #2c3e50;
+    font-size: var(--fs-sm);
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    padding: 0.95rem;
+    border: 2px solid #bdc3c7;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--fs-base);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #95a5a6;
+    background-color: #f5f5f5;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #bdc3c7;
+    outline: none;
+    -webkit-appearance: none;
+    margin: 0.5rem 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e74c3c;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #c0392b;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e74c3c;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #c0392b;
+}
+
+button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: var(--fw-semibold);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}

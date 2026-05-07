@@ -1,5 +1,6 @@
 :root {
     /* === CORES === */
+    --color-primary-500:    #2e75b6;
     --color-primary:        #e74c3c;
     --color-primary-dark:   #c0392b;
     --color-text-primary:   #2c3e50;
@@ -38,6 +39,10 @@
     --space-md: 1.5rem;
     --space-lg: 2rem;
     --space-xl: 3rem;
+
+    --spacing-100: 0.25rem;
+    --spacing-200: 0.5rem;
+    --border-width-main: 2px;
 
     /* === BORDAS === */
     --radius-sm: 4px;
