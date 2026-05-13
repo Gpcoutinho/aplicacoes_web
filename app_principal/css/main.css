@@ -1,0 +1,20 @@
+/* Ponto de entrada — apenas @imports, nunca estilos diretos.
+   Convenção: --[categoria]-[propriedade]-[variante]-[estado]
+   Regra de ouro: componentes NUNCA referenciam tokens primitivos (--_*) diretamente. */
+
+@import "./tokens/primitives.css";
+@import "./tokens/semantic.css";
+@import "./tokens/spacing.css";
+@import "./tokens/typography.css";
+
+@import "./base/reset.css";
+@import "./base/global.css";
+
+@import "./components/card.css";
+@import "./components/footer.css";
+@import "./components/form.css";
+@import "./components/hamburguer.css";
+@import "./components/navbar.css";
+@import "./components/tabs.css";
+
+@import "./utilities.css";

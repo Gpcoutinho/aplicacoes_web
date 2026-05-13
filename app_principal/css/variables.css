@@ -1,9 +1,0 @@
-/* === Design Token System ===
-   Ponto de entrada para todos os tokens do projeto.
-   Convenção: --[categoria]-[propriedade]-[variante]-[estado]
-   Regra de ouro: componentes NUNCA referenciam tokens primitivos (--_*) diretamente. */
-
-@import "tokens/primitives.css";
-@import "tokens/semantic.css";
-@import "tokens/spacing.css";
-@import "tokens/typography.css";
