@@ -2,13 +2,13 @@
 
 hr {
     border: none;
-    border-top: 2px solid #ecf0f1;
-    margin: 2rem 0;
+    border-top: var(--border-width-main) solid var(--color-border-light);
+    margin: var(--space-8) 0;
 }
 
 #valor-avaliacao {
     font-weight: var(--fw-bold);
-    color: #e74c3c;
+    color: var(--color-action-primary);
 }
 
 .cards-grid {

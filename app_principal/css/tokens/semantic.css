@@ -27,7 +27,7 @@
     --color-border-input:   var(--_neutral-400);
     --color-border-hover:   var(--_neutral-500);
     --color-border-focus:   var(--_red-500);
-    --color-border-section: #eeeeee;
+    --color-border-section: var(--_neutral-300);
 
     /* ── Ação primária (botões, destaques, links ativos) ── */
     --color-action-primary:       var(--_red-500);
