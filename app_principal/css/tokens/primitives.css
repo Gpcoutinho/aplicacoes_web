@@ -1,0 +1,50 @@
+/* === CAMADA 1: Tokens Primitivos ===
+   Paleta bruta — todos os valores possíveis do sistema.
+   Prefixo _ indica uso interno: NUNCA referenciar em componentes diretamente.
+   Apenas tokens semânticos (semantic.css) devem consumir estes valores. */
+
+:root {
+    /* ── Vermelho ── */
+    --_red-500: #e74c3c;
+    --_red-600: #c0392b;
+
+    /* ── Azul ── */
+    --_blue-400: #3498db;
+    --_blue-600: #2e75b6;
+
+    /* ── Verde ── */
+    --_green-500: #27ae60;
+
+    /* ── Âmbar ── */
+    --_amber-500: #f39c12;
+    --_amber-700: #d68910;
+
+    /* ── Neutros: escala clara ── */
+    --_neutral-0:   #ffffff;
+    --_neutral-50:  #fafafa;
+    --_neutral-100: #f9f9f9;
+    --_neutral-150: #f5f7fa;
+    --_neutral-200: #f5f5f5;
+    --_neutral-300: #ecf0f1;
+    --_neutral-400: #bdc3c7;
+    --_neutral-500: #95a5a6;
+    --_neutral-600: #555555;
+    --_neutral-700: #34495e;
+    --_neutral-750: #27394b;
+    --_neutral-800: #2c3e50;
+
+    /* ── Neutros: escala escura (dark mode) ── */
+    --_neutral-850: #1F2937;
+    --_neutral-900: #111827;
+    --_neutral-950: #1e1e1e;
+    --_neutral-970: #252525;
+    --_neutral-980: #2a2a2a;
+
+    /* ── Especiais ── */
+    --_blue-gray-200: #c3cfe2;   /* gradiente de fundo do body */
+    --_yellow-50:     #fffacd;   /* fundo .criterios */
+    --_teal-50:       #e0f2f1;   /* gradiente intro */
+    --_light-blue-50: #e8f4f8;   /* gradiente intro */
+    --_warm-50:       #fff5e6;   /* gradiente criterios */
+    --_warm-100:      #ffe6cc;   /* gradiente criterios */
+}

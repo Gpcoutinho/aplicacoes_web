@@ -1,21 +1,14 @@
 @import "variables.css";
 @import "reset.css";
-
-:root {
-    /* Breakpoints como variáveis comentadas (não funcionam em @media, mas servem
-    de referência) */
-    /* --bp-sm: 480px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px; */
-    /* Tokens de espaçamento */
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 1.5rem;
-    --space-lg: 2rem;
-    --space-xl: 3rem;
-    /* Tipografia fluida */
-    --fs-base: clamp(0.875rem, 2vw, 1rem);
-    --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
-    --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
-}
+@import "components/card.css";
+@import "components/footer.css";
+@import "components/form.css";
+@import "components/hamburguer.css";
+@import "components/navbar.css";
+@import "components/tabs.css";
+@import "layout.css";
+@import "tools.css";
+@import "utilities.css";
 
 /* ── TABLET: >= 768px ─────────────────────────────── */
 @media (min-width: 768px) {
@@ -680,14 +673,3 @@ img, video, iframe {
     }
 }
 
-@import "css/btn.css";
-@import "css/card.css";
-@import "css/footer.css";
-@import "css/form.css";
-@import "css/hamburguer.css";
-@import "css/navbar.css";
-@import "css/tabs.css";
-
-@import "layout.css";
-@import "tools.css";
-@import "utilities.css";
