@@ -4,45 +4,45 @@
 }
 
 .formulario-section h2 {
-    color: #2c3e50;
+    color: var(--color-text-primary);
     margin-top: 0;
-    border-bottom-color: #e74c3c;
+    border-bottom-color: var(--color-action-primary);
 }
 
 .formulario-section > p {
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-8);
     font-size: var(--fs-md);
-    color: #555;
+    color: var(--color-text-muted);
     line-height: var(--lh-normal);
 }
 
 .recomendacao {
-    margin-top: 0.5rem;
+    margin-top: var(--space-2);
 }
 
 /* ── FORMULÁRIO ───────────────────────────────────── */
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-6);
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: var(--space-1);
 }
 
 label {
     font-weight: var(--fw-semibold);
-    color: #2c3e50;
+    color: var(--color-text-primary);
     font-size: var(--fs-sm);
-    margin-bottom: 0.3rem;
+    margin-bottom: var(--space-1);
     display: block;
 }
 
 .form-group label {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-2);
 }
 
 input[type="text"],
@@ -52,14 +52,14 @@ input[type="date"],
 textarea,
 select {
     padding: 0.95rem;
-    border: 2px solid #bdc3c7;
+    border: var(--border-width-main) solid var(--color-border-input);
     border-radius: var(--radius-md);
     font-family: inherit;
     font-size: var(--fs-base);
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     width: 100%;
     box-sizing: border-box;
-    background-color: #fafafa;
+    background-color: var(--color-bg-input);
 }
 
 input[type="text"]:hover,
@@ -68,8 +68,8 @@ input[type="tel"]:hover,
 input[type="date"]:hover,
 textarea:hover,
 select:hover {
-    border-color: #95a5a6;
-    background-color: #f5f5f5;
+    border-color: var(--color-border-hover);
+    background-color: var(--color-bg-input-hover);
 }
 
 input[type="text"]:focus,
@@ -79,8 +79,8 @@ input[type="date"]:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #e74c3c;
-    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+    border-color: var(--color-border-focus);
+    box-shadow: var(--shadow-focus-ring);
 }
 
 textarea {
@@ -91,11 +91,11 @@ textarea {
 input[type="range"] {
     width: 100%;
     height: 8px;
-    border-radius: 5px;
-    background: #bdc3c7;
+    border-radius: var(--radius-sm);
+    background: var(--color-border-default);
     outline: none;
     -webkit-appearance: none;
-    margin: 0.5rem 0;
+    margin: var(--space-2) 0;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -103,45 +103,45 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background: #e74c3c;
+    border-radius: var(--radius-full);
+    background: var(--color-action-primary);
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-    background: #c0392b;
+    background: var(--color-action-primary-hover);
 }
 
 input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background: #e74c3c;
+    border-radius: var(--radius-full);
+    background: var(--color-action-primary);
     cursor: pointer;
     border: none;
     transition: background 0.3s ease;
 }
 
 input[type="range"]::-moz-range-thumb:hover {
-    background: #c0392b;
+    background: var(--color-action-primary-hover);
 }
 
 button {
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-    color: white;
+    padding: var(--space-4) var(--space-8);
+    background: linear-gradient(135deg, var(--color-action-primary) 0%, var(--color-action-primary-hover) 100%);
+    color: var(--color-text-inverse);
     border: none;
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: var(--fs-lg);
     font-weight: var(--fw-semibold);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+    box-shadow: var(--shadow-action-hover);
 }
 
 button:active {

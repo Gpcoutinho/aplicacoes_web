@@ -4,51 +4,51 @@
 }
 
 .categoria h2 {
-    color: #2c3e50;
-    border-bottom: 3px solid #e74c3c;
-    padding-bottom: 0.5rem;
+    color: var(--color-text-primary);
+    border-bottom: var(--border-width-accent) solid var(--color-action-primary);
+    padding-bottom: var(--space-2);
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: var(--fs-h2);
 }
 
 .restaurante {
     background: var(--color-bg-card);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #e74c3c;
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+    border-left: var(--border-width-left) solid var(--color-action-primary);
     border-radius: var(--radius-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .restaurante:hover {
     transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.15);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .restaurante h3 {
-    color: #2c3e50;
+    color: var(--color-text-primary);
     margin-top: 0;
     font-size: var(--fs-lg);
 }
 
 .restaurante h4 {
-    color: #34495e;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-2);
     font-size: var(--fs-md);
 }
 
 .restaurante .info {
-    margin: 0.3rem 0;
+    margin: var(--space-1) 0;
     font-size: var(--fs-sm);
 }
 
 .restaurante ul {
-    margin: 0.8rem 0;
-    padding-left: 1.5rem;
+    margin: var(--space-3) 0;
+    padding-left: var(--space-6);
 }
 
 .restaurante li {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-2);
     line-height: var(--lh-normal);
 }

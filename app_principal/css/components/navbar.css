@@ -8,7 +8,7 @@ nav {
     background: rgba(0, 0, 0, 0.2);
     border-radius: var(--radius-md);
     max-width: 900px;
-    margin: 1rem auto 0;
+    margin: var(--space-4) auto 0;
 }
 
 .nav-principal {
@@ -18,18 +18,18 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--space-4);
 }
 
 .nav-principal li {
     display: inline;
-    padding: 0.6rem 1rem;
+    padding: var(--space-2) var(--space-4);
 }
 
 nav a {
-    color: white;
+    color: var(--color-text-inverse);
     text-decoration: none;
-    padding: 0.6rem 1rem;
+    padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-sm);
     transition: background-color 0.3s ease;
     font-weight: var(--fw-medium);

@@ -7,7 +7,7 @@
     display: none;
     cursor: pointer;
     padding: var(--space-sm);
-    font-size: 1.5rem;
+    font-size: var(--fs-lg);
 }
 
 @media (max-width: 767px) {
@@ -17,7 +17,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        background-color: #2c3e50;
+        background-color: var(--color-bg-header);
         z-index: 999;
     }
 
@@ -27,7 +27,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        gap: 2rem;
+        gap: var(--space-8);
         padding: 0;
         margin: 0;
         list-style: none;
@@ -43,8 +43,8 @@
         top: 20px;
         left: 20px;
         z-index: 1001;
-        background-color: #27394b;
-        color: white;
+        background-color: var(--color-bg-nav-mobile);
+        color: var(--color-text-inverse);
         padding: 10px 15px;
         border-radius: var(--radius-md);
         cursor: pointer;
@@ -56,7 +56,7 @@
 
     #menu-toggle:checked ~ .menu-icon::after {
         content: " \2715";
-        font-size: 1.5rem;
+        font-size: var(--fs-lg);
     }
 
     .header-content {
