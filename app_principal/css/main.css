@@ -13,8 +13,8 @@
 @import "./components/card.css";
 @import "./components/footer.css";
 @import "./components/form.css";
-@import "./components/hamburguer.css";
 @import "./components/navbar.css";
+@import "./components/hamburguer.css";
 @import "./components/tabs.css";
 
 @import "./utilities.css";

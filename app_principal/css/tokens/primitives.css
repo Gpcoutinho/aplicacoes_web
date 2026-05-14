@@ -1,7 +1,8 @@
 /* === CAMADA 1: Tokens Primitivos ===
    Paleta bruta — todos os valores possíveis do sistema.
    Prefixo _ indica uso interno: NUNCA referenciar em componentes diretamente.
-   Apenas tokens semânticos (semantic.css) devem consumir estes valores. */
+   Apenas tokens semânticos (semantic.css) devem consumir estes valores.
+   Convenção: --[categoria]-[propriedade]-[variante]-[estado] */
 
 :root {
     /* ── Vermelho ── */
