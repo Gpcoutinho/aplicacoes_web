@@ -5,9 +5,9 @@
    Convenção: --[categoria]-[propriedade]-[variante]-[estado] */
 
 :root {
-    /* ── Vinho (ação primária) ── */
-    --_red-500: #8B1A1A;
-    --_red-600: #6B1111;
+    /* ── Terracota (ação primária) ── */
+    --_red-500: #B8441A;
+    --_red-600: #8F3210;
 
     /* ── Azul (semântica de informação) ── */
     --_blue-400: #3498db;
@@ -16,36 +16,36 @@
     /* ── Verde ── */
     --_green-500: #27ae60;
 
-    /* ── Dourado (destaque) ── */
-    --_amber-500: #D4A017;
-    --_amber-700: #7B5000;
+    /* ── Palha/Dourado (destaque) ── */
+    --_amber-500: #C68B2C;
+    --_amber-700: #8B5E10;
 
-    /* ── Neutros aquecidos: escala clara ── */
+    /* ── Neutros linho: escala clara ── */
     --_neutral-0:   #ffffff;
-    --_neutral-50:  #fdf9f6;
-    --_neutral-100: #f7f2ea;
+    --_neutral-50:  #fdfaf6;
+    --_neutral-100: #f8f3ea;
     --_neutral-150: #f2ebe0;
-    --_neutral-200: #ede0d0;
-    --_neutral-300: #ddd0c0;
-    --_neutral-400: #c4ae9c;
-    --_neutral-500: #9a8270;
-    --_neutral-600: #5c4838;
-    --_neutral-700: #3a2415;
-    --_neutral-750: #251509;
-    --_neutral-800: #1e1209;
+    --_neutral-200: #ece0cc;
+    --_neutral-300: #ddd0b8;
+    --_neutral-400: #c4a888;
+    --_neutral-500: #9a7c5c;
+    --_neutral-600: #5e4028;
+    --_neutral-700: #4a2810;
+    --_neutral-750: #1f0d04;
+    --_neutral-800: #2e160a;
 
     /* ── Neutros: escala escura (dark mode) ── */
-    --_neutral-850: #1E1510;
-    --_neutral-900: #120D09;
-    --_neutral-950: #1C1410;
-    --_neutral-970: #231A12;
-    --_neutral-980: #2A1F16;
+    --_neutral-850: #1C1008;
+    --_neutral-900: #120A04;
+    --_neutral-950: #1A1006;
+    --_neutral-970: #221408;
+    --_neutral-980: #2A1A0C;
 
     /* ── Especiais ── */
-    --_blue-gray-200: #e8d5bc;   /* gradiente de fundo do body */
-    --_yellow-50:     #fff3d0;   /* fundo .criterios */
-    --_teal-50:       #f5e8d5;   /* gradiente intro */
-    --_light-blue-50: #faf0e4;   /* gradiente intro */
-    --_warm-50:       #fff0dc;   /* gradiente criterios */
-    --_warm-100:      #f5d9b5;   /* gradiente criterios */
+    --_blue-gray-200: #e8d8c0;   /* gradiente de fundo do body */
+    --_yellow-50:     #fef0d0;   /* fundo .criterios */
+    --_teal-50:       #f5e4cc;   /* gradiente intro */
+    --_light-blue-50: #faf2e8;   /* gradiente intro */
+    --_warm-50:       #fef3dc;   /* gradiente criterios */
+    --_warm-100:      #f5dfa8;   /* gradiente criterios */
 }
