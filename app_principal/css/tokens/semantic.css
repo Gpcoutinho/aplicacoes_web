@@ -42,9 +42,9 @@
     --color-warning-dark: var(--_amber-700);
 
     /* ── Sombras com cor da ação ── */
-    --shadow-action-hover: 0 6px 12px rgba(231, 76, 60, 0.3);
-    --shadow-card-hover:   0 4px 12px rgba(231, 76, 60, 0.15);
-    --shadow-focus-ring:   0 0 0 3px rgba(231, 76, 60, 0.1);
+    --shadow-action-hover: 0 6px 12px rgba(139, 26, 26, 0.3);
+    --shadow-card-hover:   0 4px 12px rgba(139, 26, 26, 0.15);
+    --shadow-focus-ring:   0 0 0 3px rgba(139, 26, 26, 0.1);
 
     /* ── Fundos temáticos de seção ── */
     --color-bg-intro-start:     var(--_light-blue-50);

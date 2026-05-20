@@ -120,14 +120,14 @@ section:last-of-type, aside:last-of-type {
 .intro-section {
     background: linear-gradient(135deg, var(--color-bg-intro-start) 0%, var(--color-bg-intro-end) 100%);
     border-radius: var(--radius-md);
-    border-left: var(--border-width-left) solid var(--color-info);
+    border-left: var(--border-width-left) solid var(--color-action-primary);
     margin-top: var(--space-8);
 }
 
 .intro-section h2 {
     color: var(--color-text-primary);
     margin-top: 0;
-    border-bottom-color: var(--color-info);
+    border-bottom-color: var(--color-action-primary);
 }
 
 .intro-section p {
@@ -226,11 +226,15 @@ section:last-of-type, aside:last-of-type {
    automaticamente via tokens semânticos definidos em tokens/semantic.css. */
 @media (prefers-color-scheme: dark) {
     .intro-section {
-        background: linear-gradient(135deg, #16212e 0%, #0d141d 100%);
+        background: linear-gradient(135deg, #1e1510 0%, #130c07 100%);
     }
 
     .criterios-section {
-        background: linear-gradient(135deg, #2c1e05 0%, #1a1202 100%);
+        background: linear-gradient(135deg, #241500 0%, #150b00 100%);
+        color: var(--color-text-primary);
+    }
+
+    .criterios-section h2 {
         color: var(--color-text-primary);
     }
 
