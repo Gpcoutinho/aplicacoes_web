@@ -67,6 +67,20 @@ select {
     opacity: 0.55;
 }
 
+/* Date: formato "dd/mm/aaaa" não é placeholder — usa pseudo-elemento webkit */
+input[type="date"]::-webkit-datetime-edit {
+    color: rgba(74, 94, 72, 0.55);
+}
+input[type="date"]:focus::-webkit-datetime-edit,
+input[type="date"]:valid::-webkit-datetime-edit {
+    color: var(--color-text-primary);
+}
+
+/* Select: cor do elemento quando opção vazia está selecionada */
+select:has(option[value=""]:checked) {
+    color: rgba(74, 94, 72, 0.55);
+}
+
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="tel"]:hover,
