@@ -226,11 +226,11 @@ section:last-of-type, aside:last-of-type {
    automaticamente via tokens semânticos definidos em tokens/semantic.css. */
 @media (prefers-color-scheme: dark) {
     .intro-section {
-        background: linear-gradient(135deg, #1e1208 0%, #130c04 100%);
+        background: linear-gradient(135deg, #0d1f0c 0%, #081508 100%);
     }
 
     .criterios-section {
-        background: linear-gradient(135deg, #1e1000 0%, #120a00 100%);
+        background: linear-gradient(135deg, #1e1800 0%, #120e00 100%);
         color: var(--color-text-primary);
     }
 

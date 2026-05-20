@@ -42,9 +42,9 @@
     --color-warning-dark: var(--_amber-700);
 
     /* ── Sombras com cor da ação ── */
-    --shadow-action-hover: 0 6px 12px rgba(184, 68, 26, 0.3);
-    --shadow-card-hover:   0 4px 12px rgba(184, 68, 26, 0.15);
-    --shadow-focus-ring:   0 0 0 3px rgba(184, 68, 26, 0.1);
+    --shadow-action-hover: 0 6px 12px rgba(27, 122, 74, 0.3);
+    --shadow-card-hover:   0 4px 12px rgba(27, 122, 74, 0.15);
+    --shadow-focus-ring:   0 0 0 3px rgba(27, 122, 74, 0.1);
 
     /* ── Fundos temáticos de seção ── */
     --color-bg-intro-start:     var(--_light-blue-50);
@@ -66,8 +66,8 @@
         --color-bg-card:        var(--_neutral-970);
         --color-bg-input:       var(--_neutral-980);
         --color-bg-input-hover: #333333;
-        --color-bg-body-start:  #000000;
-        --color-bg-body-end:    #1a1a1a;
+        --color-bg-body-start:  #050e07;
+        --color-bg-body-end:    #0d1f12;
 
         --color-border-default: #444444;
         --color-border-light:   #333333;
