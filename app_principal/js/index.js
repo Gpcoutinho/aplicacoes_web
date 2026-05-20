@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Cor de placeholder no input de data
+    const dataInput = document.getElementById('data');
+    if (dataInput) {
+        const syncDateStyle = () => dataInput.classList.toggle('is-empty', !dataInput.value);
+        dataInput.addEventListener('change', syncDateStyle);
+        syncDateStyle();
+    }
+
     // Validação do formulário
     const formulario = document.querySelector('form');
     if (formulario) {

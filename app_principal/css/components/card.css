@@ -52,3 +52,22 @@
     margin-bottom: var(--space-2);
     line-height: var(--lh-normal);
 }
+
+/* ── CONTAINER QUERY: contexto largo (≥ 500px) ────── */
+/* Contexto 1 (< 500px): padrão — empilhado verticalmente.
+   Contexto 2 (≥ 500px): grade 2 colunas com infos lado a lado. */
+@container restaurantes (min-width: 500px) {
+    .restaurante {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--space-8);
+    }
+
+    /* h3, h4, ul e recomendação ocupam as duas colunas */
+    .restaurante > h3,
+    .restaurante > h4,
+    .restaurante > ul,
+    .restaurante > .recomendacao {
+        grid-column: 1 / -1;
+    }
+}

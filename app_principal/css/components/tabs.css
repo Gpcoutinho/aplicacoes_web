@@ -30,6 +30,12 @@
     color: var(--color-text-primary);
 }
 
+.tab-btn:focus-visible {
+    background: var(--color-border-default);
+    color: var(--color-text-primary);
+    outline-offset: -3px;
+}
+
 .tab-btn.active {
     background: var(--color-bg-page);
     color: var(--color-action-primary);
@@ -38,6 +44,8 @@
 
 .tabs-content {
     position: relative;
+    container-type: inline-size;
+    container-name: restaurantes;
 }
 
 .tab-pane {
