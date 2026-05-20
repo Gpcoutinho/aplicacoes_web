@@ -20,25 +20,26 @@ O usuário consegue identificar um restaurante de sua preferência gastronômica
 
 ## Paleta de Cores
 
-**Nome:** Sabor Nordestino
-**Inspiração:** O vermelho evoca apetite e a gastronomia vibrante nordestina; o azul-acinzentado remete à serenidade das praias de João Pessoa.
+**Nome:** Verde Esmeralda + Creme
+**Inspiração:** O verde-floresta evoca a natureza e a frescura da gastronomia; o creme sage remete à leveza da culinária nordestina litorânea.
 
-| Token CSS | Hex | Uso |
+| Token semântico | Hex | Uso |
 |---|---|---|
-| `--color-primary` | `#e74c3c` | Botões, destaques, bordas de cartões |
-| `--color-primary-dark` | `#c0392b` | Hover de botões, links ativos |
-| `--color-text-primary` | `#2c3e50` | Texto principal, títulos |
-| `--color-text-secondary` | `#34495e` | Subtítulos, texto de suporte |
-| `--color-bg-primary` | `#f5f7fa` | Fundo principal da página |
-| `--color-bg-secondary` | `#c3cfe2` | Gradiente do fundo |
-| `--color-border` | `#bdc3c7` | Bordas de inputs e separadores |
-| `--color-success` | `#27ae60` | Confirmações, estados de sucesso |
-| `--color-warning` | `#f39c12` | Seção de critérios, alertas |
+| `--color-action-primary` | `#1B7A4A` | Botões, bordas de cartões, abas ativas |
+| `--color-action-primary-hover` | `#155C37` | Hover de botões e links |
+| `--color-text-primary` | `#1B4332` | Texto principal, header |
+| `--color-text-secondary` | `#2D6A4F` | Subtítulos, texto de suporte |
+| `--color-text-muted` | `#4A5E48` | Placeholders, texto auxiliar |
+| `--color-bg-body-start` | `#EDF4ED` | Início do gradiente de fundo |
+| `--color-bg-body-end` | `#CCDECE` | Fim do gradiente de fundo |
+| `--color-border-default` | `#A4B8A4` | Bordas de inputs e separadores |
+| `--color-warning` | `#A89040` | Borda da seção de critérios |
+| `--color-warning-dark` | `#7A6420` | Título da seção de critérios |
 
 **Contraste verificado (WCAG):**
-- `#2c3e50` sobre `#f5f7fa` → ratio ≈ 10.4:1 ✅ **AAA**
-- `#ffffff` sobre `#e74c3c` → ratio ≈ 4.6:1 ✅ **AA**
-- `#d68910` sobre `#fff5e6` → ratio ≈ 4.5:1 ✅ **AA**
+- `#1B4332` sobre `#EDF4ED` → ratio ≈ 8.8:1 ✅ **AAA**
+- `#ffffff` sobre `#1B7A4A` → ratio ≈ 4.9:1 ✅ **AA**
+- `#7A6420` sobre `#FDF5E0` → ratio ≈ 5.0:1 ✅ **AA**
 
 ---
 
@@ -48,16 +49,29 @@ O usuário consegue identificar um restaurante de sua preferência gastronômica
 
 ---
 
-## Estrutura CSS (ITCSS)
+## Estrutura CSS (Design Token Architecture)
+
+Arquitetura em camadas: primitivos → semânticos → componentes. Componentes nunca referenciam valores brutos diretamente.
 
 ```
 app_principal/css/
-├── settings/variables.css   ← Custom Properties: cores (9), tipografia (escala completa), espaçamento, bordas, sombras
-├── tools/tools.css           ← Placeholder ITCSS (mixins/funções em pré-processadores)
-├── base/reset.css            ← Modern CSS Reset + estilos base de elementos (body, h1-h2, img, a)
-├── layout/layout.css         ← Estrutura de página: header, main, footer, grid responsivo (768/1024 px)
-├── components/components.css ← Nav, menu hamburguer, tabs, cards de restaurante, seções, formulário, modo escuro
-└── utilities/utilities.css   ← hr, .cards-grid, #valor-avaliacao, prefers-reduced-motion
+├── main.css                  ← Entry point — importa todos os arquivos na ordem correta
+├── tokens/
+│   ├── primitives.css        ← Paleta bruta: todas as cores, nunca usadas diretamente nos componentes
+│   ├── semantic.css          ← Tokens de intenção (--color-action-primary, --color-bg-card…) + dark mode
+│   ├── spacing.css           ← Grid de 4pt, border-radius, sombras
+│   └── typography.css        ← Escala fluida com clamp(), pesos, line-heights
+├── base/
+│   ├── reset.css             ← Modern CSS Reset + estilos base de elementos
+│   └── global.css            ← Estrutura de página, seções, sistema de abas, dark mode
+├── components/
+│   ├── navbar.css            ← Navegação principal
+│   ├── hamburguer.css        ← Menu hamburguer mobile
+│   ├── tabs.css              ← Sistema de abas por categoria
+│   ├── card.css              ← Cards de restaurante
+│   ├── form.css              ← Formulário, inputs, placeholders, botões
+│   └── footer.css            ← Rodapé
+└── utilities.css             ← Classes utilitárias, skip link, prefers-reduced-motion
 ```
 
 ---
