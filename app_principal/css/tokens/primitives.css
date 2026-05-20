@@ -20,16 +20,16 @@
     --_amber-500: #A89040;
     --_amber-700: #7A6420;
 
-    /* ── Neutros creme/oliva: escala clara ── */
+    /* ── Neutros sage: escala clara ── */
     --_neutral-0:   #ffffff;
-    --_neutral-50:  #fdfbf8;
-    --_neutral-100: #f7f5ef;
-    --_neutral-150: #f0ece2;
-    --_neutral-200: #e5dfd4;
-    --_neutral-300: #d4ccbc;
-    --_neutral-400: #b4a88c;
-    --_neutral-500: #8a7a60;
-    --_neutral-600: #5a4a30;
+    --_neutral-50:  #f8fbf8;
+    --_neutral-100: #f2f7f2;
+    --_neutral-150: #edf4ed;
+    --_neutral-200: #e4ece4;
+    --_neutral-300: #ccd8cc;
+    --_neutral-400: #a4b8a4;
+    --_neutral-500: #7a9278;
+    --_neutral-600: #4a5e48;
     --_neutral-700: #2d6a4f;
     --_neutral-750: #163826;
     --_neutral-800: #1b4332;
@@ -42,10 +42,10 @@
     --_neutral-980: #1f2a18;
 
     /* ── Especiais ── */
-    --_blue-gray-200: #d8e4d0;   /* gradiente de fundo do body */
+    --_blue-gray-200: #ccdece;   /* gradiente de fundo do body */
     --_yellow-50:     #fdf3d8;   /* fundo .criterios */
-    --_teal-50:       #dff0dc;   /* gradiente intro */
-    --_light-blue-50: #edf5ec;   /* gradiente intro */
+    --_teal-50:       #d4edce;   /* gradiente intro */
+    --_light-blue-50: #e8f5e8;   /* gradiente intro */
     --_warm-50:       #fdf5e0;   /* gradiente criterios */
     --_warm-100:      #f5e4b0;   /* gradiente criterios */
 }
