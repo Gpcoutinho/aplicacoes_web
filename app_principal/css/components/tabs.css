@@ -89,9 +89,7 @@
     margin-bottom: var(--space-6);
 }
 
-@media (prefers-color-scheme: dark) {
-    .tab-btn {
-        background: var(--color-bg-card);
-        color: var(--color-text-primary);
-    }
+[data-theme="dark"] .tab-btn {
+    background: var(--color-bg-card);
+    color: var(--color-text-primary);
 }

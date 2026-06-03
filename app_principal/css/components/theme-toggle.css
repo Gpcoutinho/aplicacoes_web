@@ -1,0 +1,44 @@
+/* ── BOTÃO DE ALTERNÂNCIA DE TEMA ───────────────────────────────
+   Tokens
+     Cor    — --color-bg-nav-mobile · --color-text-inverse
+              --color-bg-nav-link-hover · --color-border-focus
+     Espaço — --space-5
+     Borda  — --radius-full · --border-width-accent · --outline-offset-md
+     Tipog. — --fs-md · --opacity-subdued
+   Estados  — :hover · :focus-visible
+   ──────────────────────────────────────────────────────────── */
+
+.theme-toggle {
+    position: fixed;
+    top: var(--space-5);
+    right: var(--space-5);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-full);
+    background-color: var(--color-bg-nav-mobile);
+    color: var(--color-text-inverse);
+    cursor: pointer;
+    font-size: var(--fs-md);
+    transition: opacity 0.2s ease;
+}
+
+.theme-toggle:hover {
+    opacity: var(--opacity-subdued);
+}
+
+.theme-toggle:focus-visible {
+    outline: var(--border-width-accent) solid var(--color-text-inverse);
+    outline-offset: var(--outline-offset-md);
+}
+
+@media (min-width: 768px) {
+    .theme-toggle {
+        background-color: var(--color-bg-nav-link-hover);
+    }
+}

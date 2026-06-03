@@ -59,30 +59,29 @@
     --color-bg-criterios-inline: var(--_yellow-50);
 }
 
-/* ── Dark mode: apenas os tokens semânticos mudam ──
+/* ── Tema escuro: ativado via data-theme="dark" no <html> ──
+   Definido pelo JS ao ler localStorage ou a preferência do sistema.
    Os componentes não precisam saber nada sobre temas. */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-text-primary:   #F9FAFB;
-        --color-text-secondary: #d1d5db;
-        --color-text-muted:     #9ca3af;
+:root[data-theme="dark"] {
+    --color-text-primary:   #F9FAFB;
+    --color-text-secondary: #d1d5db;
+    --color-text-muted:     #9ca3af;
 
-        --color-bg-page:        var(--_neutral-950);
-        --color-bg-card:        var(--_neutral-970);
-        --color-bg-input:       var(--_neutral-980);
-        --color-bg-input-hover: #333333;
-        --color-bg-body-start:  #000000;
-        --color-bg-body-end:    #1a1a1a;
+    --color-bg-page:        var(--_neutral-950);
+    --color-bg-card:        var(--_neutral-970);
+    --color-bg-input:       var(--_neutral-980);
+    --color-bg-input-hover: #333333;
+    --color-bg-body-start:  #000000;
+    --color-bg-body-end:    #1a1a1a;
 
-        --color-border-default: #444444;
-        --color-border-light:   #333333;
-        --color-border-input:   #444444;
-        --color-border-section: #333333;
+    --color-border-default: #444444;
+    --color-border-light:   #333333;
+    --color-border-input:   #444444;
+    --color-border-section: #333333;
 
-        /* Gradientes de seção no tema escuro */
-        --color-bg-intro-start:      #16212e;
-        --color-bg-intro-end:        #0d141d;
-        --color-bg-criterios-start:  #2c1e05;
-        --color-bg-criterios-end:    #1a1202;
-    }
+    /* Gradientes de seção no tema escuro */
+    --color-bg-intro-start:      #16212e;
+    --color-bg-intro-end:        #0d141d;
+    --color-bg-criterios-start:  #2c1e05;
+    --color-bg-criterios-end:    #1a1202;
 }

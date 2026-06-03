@@ -67,6 +67,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Alternância de tema claro / escuro
+    const themeToggleBtn = document.getElementById('theme-toggle');
+
+    function setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (persist) localStorage.setItem('theme', theme);
+        if (!themeToggleBtn) return;
+        const isDark = theme === 'dark';
+        themeToggleBtn.setAttribute('aria-label',   isDark ? 'Ativar modo claro'  : 'Ativar modo escuro');
+        themeToggleBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        themeToggleBtn.querySelector('[aria-hidden]').textContent = isDark ? '☀️' : '🌙';
+    }
+
+    if (themeToggleBtn) {
+        // Sincroniza o botão com o tema já aplicado pelo script inline
+        setTheme(document.documentElement.getAttribute('data-theme') || 'light');
+
+        themeToggleBtn.addEventListener('click', function() {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            setTheme(next, true);
+        });
+
+        // Acompanha mudanças de preferência do sistema enquanto a página está aberta
+        // (só aplica se o usuário não tiver escolhido manualmente)
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+
     // Acessibilidade: atualiza aria-label do hamburguer ao abrir/fechar
     const menuToggle = document.getElementById('menu-toggle');
     const menuLabel  = document.querySelector('label[for="menu-toggle"]');
