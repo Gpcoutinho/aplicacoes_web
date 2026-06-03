@@ -27,4 +27,11 @@
     --lh-tight:  1.3;
     --lh-normal: 1.6;
     --lh-loose:  1.8;
+
+    /* ── Espaçamento entre letras ── */
+    --ls-wide: 1px;
+
+    /* ── Opacidade ── */
+    --opacity-subdued:  0.9;
+    --opacity-disabled: 0.5;
 }

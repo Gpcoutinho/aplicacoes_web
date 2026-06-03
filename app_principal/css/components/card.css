@@ -1,6 +1,6 @@
 /* ── CARDS DE RESTAURANTE ─────────────────────────── */
 .categoria {
-    scroll-margin-top: 100px;
+    scroll-margin-top: var(--scroll-margin-header);
 }
 
 .categoria h2 {

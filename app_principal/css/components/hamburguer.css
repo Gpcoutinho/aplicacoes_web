@@ -40,12 +40,12 @@
     .menu-icon {
         display: block;
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: var(--space-5);
+        left: var(--space-5);
         z-index: 1001;
         background-color: var(--color-bg-nav-mobile);
         color: var(--color-text-inverse);
-        padding: 10px 15px;
+        padding: var(--space-3) var(--space-4);
         border-radius: var(--radius-md);
         cursor: pointer;
     }
@@ -60,7 +60,7 @@
     }
 
     .header-content {
-        margin-top: 60px;
+        margin-top: var(--space-16);
     }
 
     header h1 {

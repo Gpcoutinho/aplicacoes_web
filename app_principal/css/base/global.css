@@ -77,14 +77,14 @@
     font-weight: var(--fw-semibold);
     border-radius: var(--radius-md);
     z-index: 9999;
-    outline: 3px solid var(--color-text-inverse);
-    outline-offset: 2px;
+    outline: var(--border-width-accent) solid var(--color-text-inverse);
+    outline-offset: var(--outline-offset-sm);
 }
 
 /* ── FOCO DE TECLADO GLOBAL ─────────────────────────── */
 :focus-visible {
-    outline: 3px solid var(--color-border-focus);
-    outline-offset: 3px;
+    outline: var(--border-width-accent) solid var(--color-border-focus);
+    outline-offset: var(--outline-offset-md);
     border-radius: var(--radius-sm);
 }
 
@@ -138,13 +138,13 @@ header {
 header h1 {
     margin: 0 0 var(--space-2) 0;
     font-size: var(--fs-h1);
-    letter-spacing: 1px;
+    letter-spacing: var(--ls-wide);
 }
 
 header p {
     margin: 0 0 var(--space-4) 0;
     font-size: var(--fs-md);
-    opacity: 0.9;
+    opacity: var(--opacity-subdued);
 }
 
 .header-midia {
@@ -198,7 +198,7 @@ section:last-of-type, aside:last-of-type {
 }
 
 .categoria {
-    scroll-margin-top: 100px;
+    scroll-margin-top: var(--scroll-margin-header);
 }
 
 /* SISTEMA DE ABAS */
@@ -283,30 +283,16 @@ section:last-of-type, aside:last-of-type {
 }
 
 /* SUPORTE A MODO ESCURO
-   Apenas gradientes de seção específicos — os demais elementos respondem
-   automaticamente via tokens semânticos definidos em tokens/semantic.css. */
+   Os gradientes de seção respondem via tokens semânticos em tokens/semantic.css.
+   Apenas overrides de componente que não possuem token específico ficam aqui. */
 @media (prefers-color-scheme: dark) {
-    .intro-section {
-        background: linear-gradient(135deg, #16212e 0%, #0d141d 100%);
-    }
-
-    .criterios-section {
-        background: linear-gradient(135deg, #2c1e05 0%, #1a1202 100%);
-        color: var(--color-text-primary);
-    }
-
     .tab-btn {
-        background: #222;
+        background: var(--color-bg-card);
         color: var(--color-text-primary);
-    }
-
-    .tab-btn.active {
-        background: var(--color-bg-page);
-        color: var(--color-action-primary);
     }
 
     footer {
-        background-color: #000;
+        background-color: var(--color-bg-body-start);
     }
 }
 
