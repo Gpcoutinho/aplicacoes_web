@@ -1,4 +1,14 @@
-/* ── SISTEMA DE ABAS ──────────────────────────────── */
+/* ── SISTEMA DE ABAS ────────────────────────────────────────────
+   Tokens
+     Cor    — --color-border-light · --color-border-default · --color-border-hover
+              --color-text-muted · --color-text-primary · --color-text-secondary
+              --color-bg-page · --color-action-primary-hover · --color-bg-card
+     Espaço — --space-2 · --space-4 · --space-6 · --space-8
+     Borda  — --border-width-main · --border-width-accent
+     Tipog. — --fw-semibold · --fs-base · --fs-md · --opacity-disabled
+   Estados  — .tab-btn: :hover · :focus-visible · :active (não-.active)
+                        :disabled · .active
+   ──────────────────────────────────────────────────────────── */
 .tabs-container {
     margin: var(--space-8) 0;
 }
@@ -48,8 +58,8 @@
 
 .tab-btn.active {
     background: var(--color-bg-page);
-    color: var(--color-action-primary);
-    border-bottom-color: var(--color-action-primary);
+    color: var(--color-action-primary-hover);
+    border-bottom-color: var(--color-action-primary-hover);
 }
 
 .tabs-content {
@@ -77,4 +87,11 @@
     font-style: italic;
     color: var(--color-text-muted);
     margin-bottom: var(--space-6);
+}
+
+@media (prefers-color-scheme: dark) {
+    .tab-btn {
+        background: var(--color-bg-card);
+        color: var(--color-text-primary);
+    }
 }

@@ -1,3 +1,11 @@
+/* ── RODAPÉ ─────────────────────────────────────────────────────
+   Tokens
+     Cor    — --color-bg-header · --color-text-inverse
+              --color-bg-body-start (dark mode)
+     Espaço — --space-8 · --space-4
+   Estados  — dark mode: fundo via --color-bg-body-start
+   ──────────────────────────────────────────────────────────── */
+
 footer {
     text-align: center;
     padding: var(--space-8) var(--space-4);
@@ -8,4 +16,10 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: var(--color-bg-body-start);
+    }
 }

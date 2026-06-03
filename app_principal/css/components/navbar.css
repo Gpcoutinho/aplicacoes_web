@@ -1,4 +1,12 @@
-/* ── NAVEGAÇÃO ────────────────────────────────────── */
+/* ── NAVEGAÇÃO ─────────────────────────────────────────────────
+   Tokens
+     Cor    — --color-text-inverse · --color-bg-nav · --color-bg-nav-link-hover
+     Espaço — --space-xs · --space-2 · --space-4
+     Borda  — --radius-sm · --radius-md
+     Tipog. — --fw-medium · --fs-sm · --opacity-subdued
+     Foco   — --border-width-accent · --outline-offset-md (via global)
+   Estados  — nav a: :hover · :focus-visible · :active
+   ──────────────────────────────────────────────────────────── */
 nav {
     display: flex;
     flex-wrap: wrap;

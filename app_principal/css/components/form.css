@@ -1,4 +1,20 @@
-/* ── SEÇÃO FORMULÁRIO ─────────────────────────────── */
+/* ── FORMULÁRIO ─────────────────────────────────────────────────
+   Tokens
+     Cor    — --color-text-primary · --color-text-muted · --color-text-inverse
+              --color-bg-input · --color-bg-input-hover · --color-border-input
+              --color-border-hover · --color-border-focus · --color-border-default
+              --color-action-primary-hover · --color-error
+     Espaço — --space-1 · --space-2 · --space-sm · --space-4 · --space-5
+              --space-6 · --space-8 · --scroll-margin-header
+     Borda  — --border-width-main · --border-width-accent · --radius-md
+              --radius-sm · --radius-full · --outline-offset-md
+     Tipog. — --fw-semibold · --fw-bold · --fs-sm · --fs-base · --fs-lg
+              --opacity-disabled
+     Sombra — --shadow-focus-ring · --shadow-action-hover
+   Estados  — input/textarea/select: :hover · :focus · :disabled
+              range thumb: :hover | range: :focus-visible
+              button: :hover (não-disabled) · :active (não-disabled) · :disabled
+   ──────────────────────────────────────────────────────────── */
 .formulario-section {
     scroll-margin-top: var(--scroll-margin-header);
 }
@@ -39,6 +55,11 @@ label {
     font-size: var(--fs-sm);
     margin-bottom: var(--space-1);
     display: block;
+}
+
+.required-marker {
+    color: var(--color-error);
+    margin-left: var(--space-1);
 }
 
 option {
@@ -118,6 +139,12 @@ textarea {
     min-height: 120px;
 }
 
+input[type="range"]:focus-visible {
+    outline: var(--border-width-accent) solid var(--color-border-focus);
+    outline-offset: var(--outline-offset-md);
+    border-radius: var(--radius-sm);
+}
+
 input[type="range"] {
     width: 100%;
     height: var(--space-2);
@@ -159,7 +186,7 @@ input[type="range"]::-moz-range-thumb:hover {
 
 button {
     padding: var(--space-4) var(--space-8);
-    background: linear-gradient(135deg, var(--color-action-primary) 0%, var(--color-action-primary-hover) 100%);
+    background: var(--color-action-primary-hover);
     color: var(--color-text-inverse);
     border: none;
     border-radius: var(--radius-md);

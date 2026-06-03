@@ -19,6 +19,7 @@
     /* ── Âmbar ── */
     --_amber-500: #f39c12;
     --_amber-700: #d68910;
+    --_amber-800: #78350f;  /* âmbar escuro — passa WCAG AA em fundos claros */
 
     /* ── Neutros: escala clara ── */
     --_neutral-0:   #ffffff;

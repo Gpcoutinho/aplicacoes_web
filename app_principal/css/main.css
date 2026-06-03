@@ -1,20 +1,19 @@
-/* Ponto de entrada — apenas @imports, nunca estilos diretos.
+/* Arquitetura de camadas — estilos carregados via <link> individuais no HTML.
    Convenção: --[categoria]-[propriedade]-[variante]-[estado]
-   Regra de ouro: componentes NUNCA referenciam tokens primitivos (--_*) diretamente. */
+   Regra de ouro: componentes NUNCA referenciam tokens primitivos (--_*) diretamente.
 
-@import "./tokens/primitives.css";
-@import "./tokens/semantic.css";
-@import "./tokens/spacing.css";
-@import "./tokens/typography.css";
-
-@import "./base/reset.css";
-@import "./base/global.css";
-
-@import "./components/card.css";
-@import "./components/footer.css";
-@import "./components/form.css";
-@import "./components/navbar.css";
-@import "./components/hamburguer.css";
-@import "./components/tabs.css";
-
-@import "./utilities.css";
+   Ordem de carregamento (mantida no <head> do HTML):
+     1. tokens/primitives.css   — paleta bruta, prefixo --_
+     2. tokens/semantic.css     — mapeamento de intenção + dark mode
+     3. tokens/spacing.css      — espaçamento, bordas, sombras
+     4. tokens/typography.css   — família, tamanhos, pesos, alturas de linha
+     5. base/reset.css          — reset moderno (Josh Comeau / Andy Bell)
+     6. base/global.css         — elementos HTML, layout responsivo, seções
+     7. components/card.css
+     8. components/footer.css
+     9. components/form.css
+    10. components/navbar.css
+    11. components/hamburguer.css
+    12. components/tabs.css
+    13. utilities.css            — utilitários e acessibilidade
+*/

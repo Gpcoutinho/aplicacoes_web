@@ -98,7 +98,7 @@ select:focus-visible {
 h2 {
     color: var(--color-text-primary);
     border-bottom: var(--border-width-accent) solid var(--color-action-primary);
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--space-2);
     margin-top: 0;
     font-size: var(--fs-h2);
 }
@@ -150,7 +150,7 @@ header p {
 .header-midia {
     max-width: 900px;
     margin: var(--space-6) auto 0;
-    padding: 0 !important;
+    padding: 0;
     text-align: center;
 }
 
@@ -197,32 +197,6 @@ section:last-of-type, aside:last-of-type {
     color: var(--color-text-secondary);
 }
 
-.categoria {
-    scroll-margin-top: var(--scroll-margin-header);
-}
-
-/* SISTEMA DE ABAS */
-.tabs-container {
-    margin: var(--space-8) 0;
-}
-
-.tabs-content {
-    position: relative;
-}
-
-.tab-pane {
-    display: none;
-    animation: fadeIn 0.3s ease;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
 /* ── SEÇÃO CRITÉRIOS ──────────────────────────────── */
 .criterios {
@@ -264,44 +238,4 @@ section:last-of-type, aside:last-of-type {
     margin: var(--space-6) 0;
 }
 
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: var(--space-md);
-}
 
-/* MENU HAMBURGUER */
-#menu-toggle {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    padding: var(--space-sm);
-    font-size: var(--fs-lg);
-}
-
-/* SUPORTE A MODO ESCURO
-   Os gradientes de seção respondem via tokens semânticos em tokens/semantic.css.
-   Apenas overrides de componente que não possuem token específico ficam aqui. */
-@media (prefers-color-scheme: dark) {
-    .tab-btn {
-        background: var(--color-bg-card);
-        color: var(--color-text-primary);
-    }
-
-    footer {
-        background-color: var(--color-bg-body-start);
-    }
-}
-
-/* SUPORTE A REDUÇÃO DE MOVIMENTO */
-@media (prefers-reduced-motion: reduce) {
-    *, ::before, ::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}

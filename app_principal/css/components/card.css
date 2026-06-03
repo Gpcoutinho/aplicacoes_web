@@ -1,4 +1,14 @@
-/* ── CARDS DE RESTAURANTE ─────────────────────────── */
+/* ── CARDS DE RESTAURANTE ──────────────────────────────────────
+   Tokens
+     Cor    — --color-bg-card · --color-action-primary · --color-text-primary
+              --color-text-secondary
+     Espaço — --space-1 · --space-2 · --space-3 · --space-4 · --space-6
+              --space-8 · --scroll-margin-header
+     Borda  — --border-width-left · --border-width-accent · --radius-sm
+     Tipog. — --fs-h2 · --fs-lg · --fs-md · --fs-sm · --lh-normal
+     Sombra — --shadow-card-hover
+   Estados  — .restaurante: :hover (translateX + sombra)
+   ──────────────────────────────────────────────────────────── */
 .categoria {
     scroll-margin-top: var(--scroll-margin-header);
 }

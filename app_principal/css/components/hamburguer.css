@@ -1,4 +1,15 @@
-/* ── MENU HAMBURGUER ──────────────────────────────── */
+/* ── MENU HAMBURGUER ────────────────────────────────────────────
+   Tokens
+     Cor    — --color-bg-nav-mobile · --color-bg-header · --color-text-inverse
+              --color-border-focus · --color-bg-body-start (overlay escuro)
+     Espaço — --space-sm · --space-3 · --space-4 · --space-5 · --space-8
+              --space-16
+     Borda  — --radius-md · --border-width-accent · --outline-offset-md
+     Tipog. — --fs-lg · --opacity-subdued
+   Estados  — .menu-icon: :hover · :focus-visible
+              #menu-toggle: :checked (exibe nav, altera ícone para ×)
+   ──────────────────────────────────────────────────────────── */
+
 #menu-toggle {
     display: none;
 }
@@ -34,7 +45,7 @@
     }
 
     #menu-toggle:checked ~ nav {
-        display: block !important;
+        display: block;
     }
 
     .menu-icon {
@@ -48,6 +59,16 @@
         padding: var(--space-3) var(--space-4);
         border-radius: var(--radius-md);
         cursor: pointer;
+        transition: opacity 0.2s ease;
+    }
+
+    .menu-icon:hover {
+        opacity: var(--opacity-subdued);
+    }
+
+    .menu-icon:focus-visible {
+        outline: var(--border-width-accent) solid var(--color-text-inverse);
+        outline-offset: var(--outline-offset-md);
     }
 
     #menu-toggle:checked ~ .menu-icon {

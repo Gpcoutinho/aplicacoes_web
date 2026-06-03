@@ -1,4 +1,11 @@
-/* === UTILITIES — classes utilitárias e ajustes de acessibilidade === */
+/* === UTILITIES — classes utilitárias e ajustes de acessibilidade ═════
+   Tokens
+     Cor    — --color-border-light · --color-action-primary-hover
+     Espaço — --space-8 · --space-md
+     Tipog. — --fw-bold
+   Regras   — hr · .cards-grid · #valor-avaliacao
+              prefers-reduced-motion (reset de animações)
+   ══════════════════════════════════════════════════════════════════ */
 
 hr {
     border: none;
@@ -8,7 +15,7 @@ hr {
 
 #valor-avaliacao {
     font-weight: var(--fw-bold);
-    color: var(--color-action-primary);
+    color: var(--color-action-primary-hover);
 }
 
 .cards-grid {

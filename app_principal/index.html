@@ -12,7 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tokens/primitives.css">
+    <link rel="stylesheet" href="css/tokens/semantic.css">
+    <link rel="stylesheet" href="css/tokens/spacing.css">
+    <link rel="stylesheet" href="css/tokens/typography.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/global.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/form.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/hamburguer.css">
+    <link rel="stylesheet" href="css/components/tabs.css">
+    <link rel="stylesheet" href="css/utilities.css">
 </head>
 
 <body>
@@ -24,24 +36,24 @@
             <p><strong>Descubra os Melhores Sabores da Cidade</strong></p>
         </div>
         
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <input type="checkbox" id="menu-toggle" aria-hidden="true">
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu de navegação">&#9776;</label>
 
         <nav aria-label="Menu Principal">
             <ul class="nav-principal">
                 <li><a href="#intro">Opiniões</a></li>
-                <li><a href="#criterios">📋Critérios utilizados</a></li>
-                <li><a href="#formulario">✍️ Avaliar</a></li>
+                <li><a href="#criterios"><span aria-hidden="true">📋</span>Critérios utilizados</a></li>
+                <li><a href="#formulario"><span aria-hidden="true">✍️</span> Avaliar</a></li>
             </ul>
         </nav>
 
-        <section id="midia" class="header-midia">
-            <video controls poster="capa.png" width="640">
+        <div id="midia" class="header-midia">
+            <video controls poster="capa.png" width="640" aria-label="Apresentação em vídeo dos restaurantes de João Pessoa">
                 <source src="arquivo.webm" type="video/webm">
                 <source src="arquivo.mp4" type="video/mp4">
                 <p>Este navegador não oferece suporte a vídeos em HTML5</p>
             </video>
-        </section>
+        </div>
     </header>
 
     <main id="main-content">
@@ -56,16 +68,16 @@
 
         <!-- SISTEMA DE ABAS PARA CATEGORIAS -->
         <div class="tabs-container">
-            <div class="tabs-buttons">
-                <button class="tab-btn active" data-tab="hamburguerias">🍔 Hamburgueria</button>
-                <button class="tab-btn" data-tab="pizzarias">🍕 Pizzaria</button>
-                <button class="tab-btn" data-tab="frutos-mar">🦐 Frutos do Mar</button>
+            <div class="tabs-buttons" role="tablist" aria-label="Categorias de restaurantes">
+                <button class="tab-btn active" role="tab" id="tab-hamburguerias" aria-selected="true"  aria-controls="hamburguerias" tabindex="0"  data-tab="hamburguerias"><span aria-hidden="true">🍔</span> Hamburgueria</button>
+                <button class="tab-btn"        role="tab" id="tab-pizzarias"     aria-selected="false" aria-controls="pizzarias"     tabindex="-1" data-tab="pizzarias"    ><span aria-hidden="true">🍕</span> Pizzaria</button>
+                <button class="tab-btn"        role="tab" id="tab-frutos-mar"    aria-selected="false" aria-controls="frutos-mar"    tabindex="-1" data-tab="frutos-mar"   ><span aria-hidden="true">🦐</span> Frutos do Mar</button>
             </div>
 
             <div class="tabs-content">
                 <!-- ABA 1: HAMBURGUERIA -->
-                <div id="hamburguerias" class="tab-pane active">
-                    <h2>🍔 Hamburguerias</h2>
+                <div id="hamburguerias" class="tab-pane active" role="tabpanel" aria-labelledby="tab-hamburguerias" tabindex="0">
+                    <h2><span aria-hidden="true">🍔</span> Hamburguerias</h2>
                     <p class="categoria-desc">Descubra as melhores casas de hambúrgueres artesanais de João Pessoa com carne de qualidade, pães premium e montagens incríveis.</p>
 
                     <article class="restaurante">
@@ -115,8 +127,8 @@
                 </div>
 
                 <!-- ABA 2: PIZZARIA -->
-                <div id="pizzarias" class="tab-pane">
-                    <h2>🍕 Pizzarias</h2>
+                <div id="pizzarias" class="tab-pane" role="tabpanel" aria-labelledby="tab-pizzarias" tabindex="0">
+                    <h2><span aria-hidden="true">🍕</span> Pizzarias</h2>
                     <p class="categoria-desc">As melhores pizzerias de João Pessoa com massa crocante, molho artesanal e ingredientes selecionados.</p>
 
                     <article class="restaurante">
@@ -151,8 +163,8 @@
                 </div>
 
                 <!-- ABA 3: FRUTOS DO MAR -->
-                <div id="frutos-mar" class="tab-pane">
-                    <h2>🦐 Frutos do Mar</h2>
+                <div id="frutos-mar" class="tab-pane" role="tabpanel" aria-labelledby="tab-frutos-mar" tabindex="0">
+                    <h2><span aria-hidden="true">🦐</span> Frutos do Mar</h2>
                     <p class="categoria-desc">Experiências gastronômicas com peixes frescos, camarões e frutos do mar preparados na hora.</p>
 
                     <article class="restaurante">
@@ -191,7 +203,7 @@
         <hr>
 
         <section id="criterios" class="criterios-section">
-            <h2>📋 Como Avaliamos os Restaurantes</h2>
+            <h2><span aria-hidden="true">📋</span> Como Avaliamos os Restaurantes</h2>
             <p>Nossas avaliações levam em consideração diversos critérios para oferecer uma análise justa e completa:</p>
             <ul>
                 <li><strong>Qualidade dos Ingredientes:</strong> Frescor e origem dos produtos utilizados.</li>
@@ -207,16 +219,16 @@
         <hr>
 
         <section id="formulario" class="formulario-section">
-            <h2>✍️ Compartilhe Sua Experiência Gastronômica</h2>
+            <h2><span aria-hidden="true">✍️</span> Compartilhe Sua Experiência Gastronômica</h2>
             <p>Sua opinião é valiosa! Ajude turistas e moradores locais compartilhando sua experiência em restaurantes e lanchonetes de João Pessoa. Avalie um estabelecimento que visitou ou sugira um lugar que merecia estar nesta lista.</p>
             <form action="#" method="post">
                 <div class="form-group">
-                    <label for="nome">Seu Nome: <span style="color: red;">*</span></label>
+                    <label for="nome">Seu Nome: <span class="required-marker" aria-hidden="true">*</span></label>
                     <input type="text" id="nome" name="nome" required placeholder="Como você gostaria de ser identificado?">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-mail: <span style="color: red;">*</span></label>
+                    <label for="email">E-mail: <span class="required-marker" aria-hidden="true">*</span></label>
                     <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
                 </div>
 
@@ -226,12 +238,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="data">Data da Visita: <span style="color: red;">*</span></label>
+                    <label for="data">Data da Visita: <span class="required-marker" aria-hidden="true">*</span></label>
                     <input type="date" id="data" name="data" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="restaurante">Qual Restaurante/Lanchonete Você Visitou? <span style="color: red;">*</span></label>
+                    <label for="restaurante">Qual Restaurante/Lanchonete Você Visitou? <span class="required-marker" aria-hidden="true">*</span></label>
                     <select id="restaurante" name="restaurante" required>
                         <option value="">Selecione o estabelecimento</option>
                         <option value="navarros">Navarros Burguer</option>
@@ -252,8 +264,8 @@
 
                 <div class="form-group">
                     <label for="avaliacao">Avaliação Geral (1 = Ruim | 10 = Excelente):</label>
-                    <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" value="5">
-                    <p><small>Valor selecionado: <span id="valor-avaliacao">5</span>/10</small></p>
+                    <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" value="5" aria-describedby="valor-avaliacao">
+                    <p><small>Valor selecionado: <span id="valor-avaliacao" aria-live="polite">5</span>/10</small></p>
                 </div>
 
                 <div class="form-group">
@@ -273,7 +285,7 @@
 
                 <button type="submit">Enviar Minha Avaliação</button>
 
-                <p><span style="color: red;">*</span> Campos obrigatórios</p>
+                <p><span class="required-marker" aria-hidden="true">*</span> Campos obrigatórios</p>
             </form>
         </section>
     </main>

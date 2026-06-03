@@ -39,7 +39,8 @@
     --color-info-dark:    var(--_blue-600);
     --color-success:      var(--_green-500);
     --color-warning:      var(--_amber-500);
-    --color-warning-dark: var(--_amber-700);
+    --color-warning-dark: var(--_amber-800);
+    --color-error:        var(--_red-500);
 
     /* ── Sombras com cor da ação ── */
     --shadow-action-hover: 0 6px 12px rgba(231, 76, 60, 0.3);
